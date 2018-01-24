@@ -1,0 +1,22 @@
+{
+  "name": "mattr-devtest",
+  "version": "1.0.0",
+  "description": "Developer test to demonstrate code to build Mattr website",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richardse08/mattr-devtest.git"
+  },
+  "author": "Eric Richards",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/richardse08/mattr-devtest/issues"
+  },
+  "homepage": "https://github.com/richardse08/mattr-devtest#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
