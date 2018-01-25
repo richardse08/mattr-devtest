@@ -1,0 +1,36 @@
+html, body {
+  margin: 0px; }
+
+@media (min-width: 801px) {
+  .hero {
+    background-image: url(/assets/hero.png);
+    background-repeat: no-repeat;
+    height: 650px;
+    background-position: cover;
+    background-size: 100%; } }
+@media (max-width: 800px) {
+  .hero {
+    background-image: url(/assets/hero.png);
+    background-repeat: no-repeat;
+    height: 650px;
+    background-position: 66% 0%;
+    background-size: 137%; }
+
+  .header {
+    padding: 0 0 0 0; } }
+@media (max-width: 500px) {
+  .hero {
+    background-image: url(/assets/hero.png);
+    background-repeat: no-repeat;
+    height: 650px;
+    background-position: 66% 0%;
+    background-size: 174%; } }
+@media (max-width: 400px) {
+  .hero {
+    background-image: url(/assets/hero.png);
+    background-repeat: no-repeat;
+    height: 650px;
+    background-position: 48% 0%;
+    background-size: 242%; } }
+
+/*# sourceMappingURL=style.css.map */
