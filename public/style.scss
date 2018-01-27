@@ -104,7 +104,7 @@ a, a:visited, a:focus {
 
 
 
-@media (min-width: 800px) {
+@media (min-width: 800px) and (max-width: 1199px) {
     .hero {
         background-position: 66% 0%;
         background-size: 137%;
@@ -125,7 +125,7 @@ a, a:visited, a:focus {
 
 
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (max-width: 700px) {
     .hero {
         background-position: 66% 0%;
         background-size: 174%;
@@ -146,7 +146,7 @@ a, a:visited, a:focus {
 
 
 
-@media (max-width: 599px) {
+@media (min-width: 446px) and (max-width: 599px) {
     .hero {
         background-position: 48% 0%;
         background-size: 242%;
