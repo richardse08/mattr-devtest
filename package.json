@@ -18,5 +18,8 @@
   "homepage": "https://github.com/richardse08/mattr-devtest#readme",
   "dependencies": {
     "express": "^4.16.2"
+  },
+  "engines": {
+    "node": "4.1.1"
   }
 }
