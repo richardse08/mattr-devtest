@@ -1,36 +1,106 @@
 html, body {
   margin: 0px; }
 
+/* helpers */
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+/* header and hero MQs section ****************/
+.hero {
+  background-image: url(/assets/hero.png);
+  background-repeat: no-repeat;
+  height: 650px; }
+
+.wrapper {
+  max-width: 1024px;
+  margin: auto; }
+
+.subwrapper {
+  margin: 0 0 0 52px; }
+
+.header .header__right--blog {
+  font-family: 'Proxima Nova';
+  color: #fb0059;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin: 2px 17px 0 0; }
+
+.header .header__right--signin {
+  font-family: "Proxima Nova";
+  color: #fb0059;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin: 2px 29px 0 0; }
+
 @media (min-width: 801px) {
   .hero {
-    background-image: url(/assets/hero.png);
-    background-repeat: no-repeat;
-    height: 650px;
-    background-position: cover;
-    background-size: 100%; } }
+    background-size: 102%; }
+
+  .header {
+    margin: auto;
+    padding: 24px 0px 0 0px; } }
 @media (max-width: 800px) {
   .hero {
-    background-image: url(/assets/hero.png);
-    background-repeat: no-repeat;
-    height: 650px;
     background-position: 66% 0%;
     background-size: 137%; }
 
   .header {
-    padding: 0 0 0 0; } }
+    max-width: 975px;
+    margin: auto;
+    padding: 24px 0px 0 0px; } }
 @media (max-width: 500px) {
   .hero {
-    background-image: url(/assets/hero.png);
-    background-repeat: no-repeat;
-    height: 650px;
     background-position: 66% 0%;
-    background-size: 174%; } }
+    background-size: 174%; }
+
+  .header {
+    max-width: 975px;
+    margin: auto;
+    padding: 24px 0px 0 0px; } }
 @media (max-width: 400px) {
   .hero {
-    background-image: url(/assets/hero.png);
-    background-repeat: no-repeat;
-    height: 650px;
     background-position: 48% 0%;
-    background-size: 242%; } }
+    background-size: 242%; }
+
+  .header {
+    max-width: 975px;
+    margin: auto;
+    padding: 24px 0px 0 0px; } }
+/* intro section ****************************/
+.intro {
+  width: 485px;
+  margin: 74px auto 0 auto;
+  text-align: center; }
+
+.mattr-logo {
+  margin: 0 0 22px 0; }
+
+.intro .intro__text__center {
+  margin: 0 0 52px 0; }
+
+.intro__text--large {
+  font-size: 48px;
+  color: #FFFFFF;
+  font-family: 'Adelle';
+  letter-spacing: 1px;
+  line-height: 44px; }
+
+.intro__text--small {
+  font-size: 14px;
+  color: #FFFFFF;
+  font-family: 'Proxima Nova';
+  line-height: 8px;
+  margin: 11px 0 0 0; }
+
+.intro__text--medium {
+  font-size: 13px;
+  color: #FFFFFF;
+  font-family: 'Proxima Nova';
+  letter-spacing: 1px;
+  line-height: 18px;
+  margin: 0 0 0 0; }
 
 /*# sourceMappingURL=style.css.map */
