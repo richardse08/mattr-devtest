@@ -1,36 +1,34 @@
 {
-  "name": "mattr-project",
-  "version": "0.3.0",
-  "description": "Replica of Mattr site",
-  "engines": {
-    "node": "8.1.3"
-  },
+  "name": "mattr-devtest",
+  "version": "1.0.0",
+  "description": "Replica of the Mattr website",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "dependencies": {
-    "ejs": "^2.5.6",
-    "express": "^4.15.2"
-  },
-  "devDependencies": {
-    "request": "^2.81.0",
-    "tape": "^4.7.0"
+    "test": "test.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/richardse08/mattr-devtest.git"
   },
   "keywords": [
-    "node",
     "heroku",
-    "express"
+    "node",
+    "express",
+    "mattr",
+    "mode"
   ],
+  "author": "Eric Richards",
   "license": "MIT",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/richardse08/mattr-devtest/issues"
   },
-  "homepage": "",
-  "author": "eric richards"
+  "homepage": "https://github.com/richardse08/mattr-devtest#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2"
+  },
+  "engines": {
+    "node": "4.1.1"
+  }
 }
