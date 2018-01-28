@@ -1,51 +1,209 @@
-/*
-Error: Invalid CSS after "@media only ": expected "{", was "(min-width: 120..."
-        on line 93 of style.scss
+/* structuring general environment *************/
+html, body {
+  margin: 0px; }
 
-88: 
-89: 
-90: 
-91: 
-92: /* media queries for responsive rendering *********************\/
-93: @media only (min-width: 1200px) {
-94:     .hero {
-95:         background-size: 102%;
-96:     }
-97:     .header {
-98:         max-width: 975px;
+input:focus, select:focus, textarea:focus, button:focus {
+  outline: none; }
 
-Backtrace:
-style.scss:93
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:1278:in `expected'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:1208:in `expected'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:1203:in `tok!'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:677:in `block'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:421:in `media_directive'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:234:in `special_directive'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:209:in `directive'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:696:in `block_child'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:689:in `block_contents'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:137:in `stylesheet'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:41:in `parse'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:414:in `_to_tree'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:320:in `block in watch'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"@media only \": expected \"{\", was \"(min-width: 120...\"\A         on line 93 of style.scss\A \A 88: \A 89: \A 90: \A 91: \A 92: /* media queries for responsive rendering *********************/\A 93: @media only (min-width: 1200px) {\A 94:     .hero {\A 95:         background-size: 102%;\A 96:     }\A 97:     .header {\A 98:         max-width: 975px;"; }
+/* disable ALL visited links from underlining and changing color */
+a, a:visited, a:focus {
+  text-decoration: none; }
+
+/* font sets **********************************/
+@font-face {
+  font-family: 'Adelle Light';
+  src: url(/assets/fonts/Adelle_light.otf); }
+@font-face {
+  font-family: 'Proxima Nova RG';
+  src: url(/assets/fonts/ProximaNova-Reg.otf); }
+@font-face {
+  font-family: 'Proxima Nova Semibold';
+  src: url(/assets/fonts/ProximaNova-Semibold.otf); }
+@font-face {
+  font-family: 'Proxima Nova Semibold Italic';
+  src: url(/assets/fonts/ProximaNova-SboldItalic.otf); }
+/* helpers *************************************/
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+/* header and hero MQs section ****************/
+.hero {
+  background-image: url(/assets/hero.png);
+  background-repeat: no-repeat;
+  min-height: 490px;
+  padding-bottom: 45px; }
+
+.wrapper {
+  max-width: 1024px;
+  margin: auto; }
+
+.header .mattr-text-logo {
+  margin: 0 0 0 24px; }
+
+.header .header__right--blog {
+  font-family: 'Proxima Nova';
+  color: #fb0059;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin: 2px 17px 0 0; }
+
+.header .header__right--signin {
+  font-family: "Proxima Nova";
+  color: #fb0059;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin: 2px 29px 0 0; }
+
+/* media queries for responsive rendering *********************/
+@media only screen and (min-width: 1200px) {
+  .hero {
+    background-size: 102%; }
+
+  .header {
+    max-width: 975px;
+    margin: auto;
+    padding: 24px 0 0 0; }
+
+  .intro {
+    width: 485px; }
+
+  .intro__text--small {
+    font-size: 14px; } }
+@media only screen and (min-width: 800px) and (max-width: 1199px) {
+  .hero {
+    background-position: 66% 0%;
+    background-size: 137%; }
+
+  .header {
+    max-width: 975px;
+    margin: auto;
+    padding: 24px 0 0 0; }
+
+  .intro {
+    width: 485px; }
+
+  .intro__text--small {
+    font-size: 14px; } }
+@media only screen and (min-width: 600px) and (max-width: 799px) {
+  .hero {
+    background-position: 66% 0%;
+    background-size: 174%; }
+
+  .header {
+    max-width: 975px;
+    margin: auto;
+    padding: 24px 0 0 0; }
+
+  .intro {
+    width: 485px; }
+
+  .intro__text--small {
+    font-size: 14px; } }
+@media only screen and (min-width: 446px) and (max-width: 599px) {
+  .hero {
+    background-position: 48% 0%;
+    background-size: 242%; }
+
+  .header {
+    max-width: 975px;
+    margin: auto;
+    padding: 24px 0 0 0; }
+
+  .intro {
+    width: 375px; }
+
+  .intro__text--small {
+    font-size: 12px; } }
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  .hero {
+    background-position: 0% 0%;
+    background-size: 271%; }
+
+  .header {
+    max-width: 975px;
+    margin: auto;
+    padding: 24px 0 0 0; }
+
+  .intro {
+    width: 375px; }
+
+  .intro__text--small {
+    font-size: 12px; } }
+/* intro section ****************************/
+.intro {
+  margin: 74px auto auto auto;
+  text-align: center; }
+
+.mattr-logo {
+  margin: 0 0 22px 0; }
+
+.intro .intro__text__center {
+  margin: 0 0 52px 0; }
+
+.intro__text--large {
+  font-size: 48px;
+  color: #FFFFFF;
+  font-family: 'Adelle Light';
+  letter-spacing: 1px;
+  line-height: 44px; }
+
+.intro__text--small {
+  color: #FFFFFF;
+  font-family: 'Proxima Nova';
+  line-height: 8px;
+  margin: 11px 0 0 0; }
+
+.intro__text--medium {
+  font-size: 13px;
+  color: #FFFFFF;
+  font-family: 'Proxima Nova';
+  letter-spacing: 1px;
+  line-height: 18px;
+  margin: 0 0 0 0; }
+
+/* 'request an invite' box *******************/
+.invite {
+  width: 328px;
+  height: 50px;
+  background-color: #ffffff;
+  margin: 8px auto; }
+
+.email__field {
+  width: 180px;
+  height: 30px;
+  font-size: 14px;
+  font-family: 'Proxima Nova Semibold';
+  color: black;
+  margin: 7.5px 0 0 0;
+  border: solid;
+  border-color: white; }
+
+input::placeholder {
+  font-family: 'Proxima Nova Semibold Italic';
+  color: #A5A5A5;
+  opacity: 0.5; }
+
+.invite__request {
+  width: 125px;
+  height: 40px;
+  background-image: url(assets/layer.png);
+  margin: 5px 5px 0 0;
+  padding: 11px 0 0 0;
+  box-sizing: border-box; }
+
+.invite__request--text {
+  color: #ffffff;
+  font-family: 'Proxima Nova Semibold';
+  font-size: 12px;
+  border-radius: 5px;
+  text-align: center; }
+
+/* main section ***********************************/
+.content {
+  height: 1000px;
+  background: #ECECEC; }
+
+/*# sourceMappingURL=style.css.map */
