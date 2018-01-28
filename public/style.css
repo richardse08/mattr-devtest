@@ -58,13 +58,72 @@ a, a:visited, a:focus {
   margin: 2px 29px 0 0; }
 
 /* media queries for responsive rendering *********************/
+@media only screen and (min-width: 1200px) {
+  .hero {
+    background-size: 102%; }
+
+  .header {
+    max-width: 975px;
+    margin: auto;
+    padding: 24px 0 0 0; }
+
+  .intro {
+    width: 485px; }
+
+  .intro__text--small {
+    font-size: 14px; } }
+@media only screen and (min-width: 800px) and (max-width: 1199px) {
+  .hero {
+    background-position: 66% 0%;
+    background-size: 137%; }
+
+  .header {
+    max-width: 975px;
+    margin: auto;
+    padding: 24px 0 0 0; }
+
+  .intro {
+    width: 485px; }
+
+  .intro__text--small {
+    font-size: 14px; } }
+@media only screen and (min-width: 600px) and (max-width: 799px) {
+  .hero {
+    background-position: 66% 0%;
+    background-size: 174%; }
+
+  .header {
+    max-width: 975px;
+    margin: auto;
+    padding: 24px 0 0 0; }
+
+  .intro {
+    width: 485px; }
+
+  .intro__text--small {
+    font-size: 14px; } }
+@media only screen and (min-width: 446px) and (max-width: 599px) {
+  .hero {
+    background-position: 48% 0%;
+    background-size: 242%; }
+
+  .header {
+    max-width: 975px;
+    margin: auto;
+    padding: 24px 0 0 0; }
+
+  .intro {
+    width: 375px; }
+
+  .intro__text--small {
+    font-size: 12px; } }
 @media only screen and (max-width: 445px) {
   .hero {
     background-position: 0% 0%;
     background-size: 271%; }
 
   .header {
-    max-width: 975px;
+    max-width: 400px;
     margin: auto;
     padding: 24px 0 0 0; }
 
