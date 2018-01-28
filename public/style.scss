@@ -173,28 +173,7 @@ a, a:visited, a:focus {
 
 
 
-// @media (max-width: 445px) {
-//     .hero {
-//         background-position: 0% 0%;
-//         background-size: 271%;
-//     }
-//     .header {
-//         max-width: 975px;
-//         margin: auto;
-//         padding: 24px 0 0 0;
-//     }
-//     .intro {
-//         width: 375px;
-//     }
-//     .intro__text--small {
-//         font-size: 12px;
-//     }
-// }
-
-
-
-
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) { 
+@media only screen and (max-width: 445px) {
     .hero {
         background-position: 0% 0%;
         background-size: 271%;
@@ -210,9 +189,7 @@ a, a:visited, a:focus {
     .intro__text--small {
         font-size: 12px;
     }
-
 }
-
 
 
 
