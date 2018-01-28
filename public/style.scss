@@ -173,7 +173,7 @@ a, a:visited, a:focus {
 
 
 
-@media only screen and (max-width: 445px) {
+@media (min-width: 320px) and (max-width: 480px) {
     .hero {
         background-position: 0% 0%;
         background-size: 271%;
