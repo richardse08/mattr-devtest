@@ -206,10 +206,6 @@ input::placeholder {
   text-align: center; }
 
 /* main section ***********************************/
-.content {
-  max-width: 1024px;
-  margin: auto; }
-
 .content .block {
   float: left;
   margin: auto; }
@@ -226,17 +222,21 @@ input::placeholder {
   margin: 0 0 20px 20px; }
 
 @media (min-width: 1025px) and (max-width: 4400px) {
+  .content {
+    max-width: 1024px;
+    margin: auto; }
+
   .content .block {
     width: 290px;
     padding-left: 40px; } }
-@media (min-width: 701px) and (max-width: 1024px) {
+@media (min-width: 950px) and (max-width: 1024px) {
+  .content {
+    max-width: 1024px;
+    margin: auto; }
+
   .content .block {
-    width: 375px;
-    padding-left: 75px; } }
-@media (min-width: 300px) and (max-width: 700px) {
-  .content .block {
-    width: 500px;
-    padding-left: 120px; } }
+    width: 280px;
+    padding-left: 35px; } }
 .content .the-app h {
   color: #42014e;
   font-family: "Adelle";
