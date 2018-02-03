@@ -1,6 +1,7 @@
 /* structuring general environment *************/
 html, body {
-  margin: 0px; }
+  margin: 0px;
+  background: #ECECEC; }
 
 input:focus, select:focus, textarea:focus, button:focus {
   outline: none; }
@@ -13,6 +14,9 @@ a, a:visited, a:focus {
 @font-face {
   font-family: 'Adelle Light';
   src: url(/assets/fonts/Adelle_light.otf); }
+@font-face {
+  font-family: 'Adelle Light Italic';
+  src: url(/assets/fonts/Adelle_LightItalic.otf); }
 @font-face {
   font-family: 'Proxima Nova RG';
   src: url(/assets/fonts/ProximaNova-Reg.otf); }
@@ -36,21 +40,21 @@ a, a:visited, a:focus {
   min-height: 490px;
   padding-bottom: 45px; }
 
-.wrapper {
+.hero .wrapper {
   max-width: 1024px;
   margin: auto; }
 
-.header .mattr-text-logo {
+.hero .header .mattr-text-logo {
   margin: 0 0 0 24px; }
 
-.header .header__right--blog {
+.hero .header .header__right--blog {
   font-family: 'Proxima Nova';
   color: #fb0059;
   font-size: 12px;
   letter-spacing: 1px;
   margin: 2px 17px 0 0; }
 
-.header .header__right--signin {
+.hero .header .header__right--signin {
   font-family: "Proxima Nova";
   color: #fb0059;
   font-size: 12px;
@@ -62,75 +66,75 @@ a, a:visited, a:focus {
   .hero {
     background-size: 102%; }
 
-  .header {
+  .hero .header {
     max-width: 975px;
     margin: auto;
     padding: 24px 0 0 0; }
 
-  .intro {
+  .hero .intro {
     width: 485px; }
 
-  .intro__text--small {
+  .hero .intro__text--small {
     font-size: 14px; } }
 @media only screen and (min-width: 800px) and (max-width: 1199px) {
   .hero {
     background-position: 66% 0%;
     background-size: 137%; }
 
-  .header {
+  .hero .header {
     max-width: 975px;
     margin: auto;
     padding: 24px 0 0 0; }
 
-  .intro {
+  .hero .intro {
     width: 485px; }
 
-  .intro__text--small {
+  .hero .intro__text--small {
     font-size: 14px; } }
 @media only screen and (min-width: 600px) and (max-width: 799px) {
   .hero {
     background-position: 66% 0%;
     background-size: 174%; }
 
-  .header {
+  .hero .header {
     max-width: 975px;
     margin: auto;
     padding: 24px 0 0 0; }
 
-  .intro {
+  .hero .intro {
     width: 485px; }
 
-  .intro__text--small {
+  .hero .intro__text--small {
     font-size: 14px; } }
 @media only screen and (min-width: 446px) and (max-width: 599px) {
   .hero {
     background-position: 48% 0%;
     background-size: 242%; }
 
-  .header {
+  .hero .header {
     max-width: 975px;
     margin: auto;
     padding: 24px 0 0 0; }
 
-  .intro {
+  .hero .intro {
     width: 375px; }
 
-  .intro__text--small {
+  .hero .intro__text--small {
     font-size: 12px; } }
 @media (min-width: 320px) and (max-width: 480px) {
   .hero {
     background-position: 0% 0%;
     background-size: 271%; }
 
-  .header {
+  .hero .header {
     max-width: 400px;
     margin: auto;
     padding: 24px 0 0 0; }
 
-  .intro {
+  .hero .intro {
     width: 375px; }
 
-  .intro__text--small {
+  .hero .intro__text--small {
     font-size: 12px; } }
 /* intro section ****************************/
 .intro {
@@ -203,7 +207,73 @@ input::placeholder {
 
 /* main section ***********************************/
 .content {
-  height: 1000px;
-  background: #ECECEC; }
+  height: 2000px;
+  max-width: 1024px;
+  margin: auto; }
+
+.content .block {
+  height: 375px;
+  padding-top: 25px;
+  float: left;
+  margin: auto; }
+
+.content .the-app {
+  padding-top: 150px; }
+
+.content .block .image {
+  margin: 0 0 20px 20px; }
+
+@media (min-width: 1025px) and (max-width: 4400px) {
+  .content .block {
+    width: 290px;
+    padding-left: 40px; } }
+@media (min-width: 701px) and (max-width: 1024px) {
+  .content .block {
+    width: 375px;
+    padding-left: 50px; } }
+@media (min-width: 300px) and (max-width: 700px) {
+  .content .block {
+    width: 500px;
+    padding-left: 120px; } }
+.content .the-app h {
+  color: #42014e;
+  font-family: "Adelle";
+  font-size: 52px;
+  font-weight: 300;
+  letter-spacing: 0.52px;
+  line-height: 51px;
+  text-align: left; }
+
+.content .the-app p {
+  color: #7d7d7d;
+  font-family: "Adelle Light Italic";
+  font-size: 17px;
+  font-weight: 400;
+  text-align: left; }
+
+.content .image__icon {
+  z-index: 10; }
+
+.content .image__btn {
+  margin: 0 0 4px -41px;
+  z-index: 100; }
+
+.content h {
+  color: #df0e6b;
+  font-family: "Adelle";
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.29px;
+  line-height: 12.49px;
+  text-align: left; }
+
+.content p {
+  color: #7c7b74;
+  font-family: "Proxima Nova RG";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.22px;
+  line-height: 20px;
+  text-align: left; }
 
 /*# sourceMappingURL=style.css.map */
