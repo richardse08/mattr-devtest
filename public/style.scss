@@ -297,25 +297,12 @@ input::placeholder {
 
 
 /* main section ***********************************/
-// .content {
-//     max-width: 1024px;
-//     margin: auto;
-// }
-
-
-
-
-.content .block {
-    float: left;
-    margin: auto;
-}
-
 .content .the-app {
     height: 250px;
     padding-top: 125px;
 }
 
-.content .audience, .persona, .engagement, .social, .sentiment {
+.content .feature {
     height: 375px;
     padding-top: 25px;
 }
@@ -327,51 +314,85 @@ input::placeholder {
 
 
 
-@media (min-width: 1025px) and (max-width: 4400px) {
+@media (min-width: 1024px) and (max-width: 4400px) {
     .content {
         max-width: 1024px;
         margin: auto;
     }
     .content .block {
+        float: left;
+        margin: auto;
         width: 290px;
         padding-left: 40px;
     }
+    .content .block .image {
+        margin: 0 0 20px 20px;
+    }
 }
 
-@media (min-width: 950px) and (max-width: 1024px) {
+@media (min-width: 870px) and (max-width: 1023px) {
     .content {
-        max-width: 1024px;
+        max-width: 870px;
         margin: auto;
     }
     .content .block {
-        width: 280px;
-        padding-left: 35px;
+        float: left;
+        margin: auto;
+        width: 270px;
+        padding-left: 15px;
+    }
+    .content .block .image {
+        margin: 0 0 20px 20px;
     }
 }
 
-// @media (min-width: 800px) and (max-width: 949px) {
-    
-//     .content .block {
-//         width: 350px;
-//         padding-left: 50px;
-//     }
-// }
+@media (min-width: 750px) and (max-width: 869px) {
+    .content {
+        max-width: 750px;
+        margin: auto;
+    }
+    .content .block {
+        float: left;
+        margin: auto;
+        width: 335px;
+        padding-left: 30px;
+    }
+    .content .block .image {
+        margin: 0 0 20px 60px;
+    }
+}
 
-// @media (min-width: 701px) and (max-width: 799px) {
-    
-//     .content .block {
-//         width: 350px;
-//         padding-left: 30px;
-//     }
-// }
+@media (min-width: 615px) and (max-width: 749px) {
+    .content {
+        max-width: 615px;
+        margin: auto;
+    }
+    .content .block {
+        float: left;
+        margin: auto;
+        width: 280px;
+        padding-left: 20px;
+    }
+    .content .block .image {
+        margin: 0 0 20px 20px;
+    }
+}
 
-// @media (min-width: 300px) and (max-width: 700px) {
-    
-//     .content .block {
-//         width: 500px;
-//         padding-left: 120px;
-//     }
-// }
+@media (min-width: 415px) and (max-width: 614px) {
+    .content {
+        max-width: 400px;
+        margin: auto;
+    }
+    .content .block {
+        float: left;
+        margin: auto;
+        width: 380px;
+        padding-left: 20px;
+    }
+    .content .block .image {
+        margin: 0 0 20px 80px;
+    }
+}
 
 
 
