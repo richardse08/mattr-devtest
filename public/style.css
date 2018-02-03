@@ -207,18 +207,20 @@ input::placeholder {
 
 /* main section ***********************************/
 .content {
-  height: 2000px;
   max-width: 1024px;
   margin: auto; }
 
 .content .block {
-  height: 375px;
-  padding-top: 25px;
   float: left;
   margin: auto; }
 
 .content .the-app {
-  padding-top: 150px; }
+  height: 250px;
+  padding-top: 125px; }
+
+.content .audience, .persona, .engagement, .social, .sentiment {
+  height: 375px;
+  padding-top: 25px; }
 
 .content .block .image {
   margin: 0 0 20px 20px; }
@@ -230,7 +232,7 @@ input::placeholder {
 @media (min-width: 701px) and (max-width: 1024px) {
   .content .block {
     width: 375px;
-    padding-left: 50px; } }
+    padding-left: 75px; } }
 @media (min-width: 300px) and (max-width: 700px) {
   .content .block {
     width: 500px;
