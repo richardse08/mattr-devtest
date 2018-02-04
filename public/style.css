@@ -112,7 +112,8 @@ a, a:visited, a:focus {
   color: black;
   margin: 7.5px 0 0 0;
   border: solid;
-  border-color: white; }
+  border-color: white;
+  box-sizing: border-box; }
 
 input::placeholder {
   font-family: 'Proxima Nova Semibold Italic';
