@@ -6,12 +6,12 @@ html, body {
 input:focus, select:focus, textarea:focus, button:focus {
   outline: none; }
 
+textarea:focus, input:focus {
+  outline: none; }
+
 /* disable ALL visited links from underlining and changing color */
 a, a:visited, a:focus {
   text-decoration: none; }
-
-textarea:focus, input:focus {
-  outline: none; }
 
 /* font sets **********************************/
 @font-face {
@@ -116,7 +116,8 @@ textarea:focus, input:focus {
   font-size: 14px;
   font-family: 'Proxima Nova Semibold';
   color: black;
-  margin: 7.5px 0 0 0; }
+  margin: 7.5px 0 0 0;
+  outline: none; }
 
 input::placeholder {
   font-family: 'Proxima Nova Semibold Italic';

@@ -8,13 +8,13 @@ input:focus, select:focus, textarea:focus, button:focus {
     outline: none;
 }
 
+textarea:focus, input:focus{
+    outline: none;
+}
+
 /* disable ALL visited links from underlining and changing color */
 a, a:visited, a:focus {
     text-decoration: none;
-}
-
-textarea:focus, input:focus{
-    outline: none;
 }
 
 
@@ -172,6 +172,7 @@ textarea:focus, input:focus{
     // border: solid;
     // border-color: white;
     // box-sizing: border-box;
+    outline: none;
 }
 
 input::placeholder {
