@@ -96,7 +96,7 @@ a, a:visited, a:focus {
 
 
 /* media queries for responsive rendering *********************/
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 980px) {
     .hero {
         background-size: 102%;
     }
@@ -116,7 +116,7 @@ a, a:visited, a:focus {
 
 
 
-@media only screen and (min-width: 800px) and (max-width: 1199px) {
+@media only screen and (min-width: 800px) and (max-width: 979px) {
     .hero {
         background-position: 66% 0%;
         background-size: 137%;
@@ -316,6 +316,7 @@ input::placeholder {
 
 @media (min-width: 1024px) and (max-width: 4400px) {
     .content {
+        height: 800px;
         max-width: 1024px;
         margin: auto;
     }
@@ -332,6 +333,7 @@ input::placeholder {
 
 @media (min-width: 870px) and (max-width: 1023px) {
     .content {
+        height: 800px;
         max-width: 870px;
         margin: auto;
     }
@@ -348,6 +350,7 @@ input::placeholder {
 
 @media (min-width: 750px) and (max-width: 869px) {
     .content {
+        height: 1200px;
         max-width: 750px;
         margin: auto;
     }
@@ -364,6 +367,7 @@ input::placeholder {
 
 @media (min-width: 615px) and (max-width: 749px) {
     .content {
+        height: 1200px;
         max-width: 615px;
         margin: auto;
     }
@@ -380,6 +384,7 @@ input::placeholder {
 
 @media (min-width: 415px) and (max-width: 614px) {
     .content {
+        height: 2375px;
         max-width: 400px;
         margin: auto;
     }
@@ -445,3 +450,15 @@ input::placeholder {
 }
 
 
+
+
+
+
+
+
+
+
+.footer {
+    height: 330px;
+    background-image: url(assets/footer-bg.png);
+}
