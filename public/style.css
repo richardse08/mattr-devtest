@@ -342,7 +342,26 @@ input::placeholder {
   .content .block {
     float: left;
     margin: auto;
-    width: 480px; }
+    width: 330px; }
+
+  .content .the-app {
+    padding-top: 125px; }
+
+  .content .feature {
+    padding-top: 25px; }
+
+  .content .block .image {
+    margin: 0 0 20px 80px; } }
+@media only screen and (max-device-width: 375px) {
+  .content {
+    height: 2375px;
+    max-width: 375px;
+    margin: auto; }
+
+  .content .block {
+    float: left;
+    margin: auto;
+    width: 330px; }
 
   .content .the-app {
     padding-top: 125px; }
