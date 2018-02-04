@@ -13,6 +13,10 @@ a, a:visited, a:focus {
     text-decoration: none;
 }
 
+textarea:focus, input:focus{
+    outline: none;
+}
+
 
 
 /* font sets **********************************/
@@ -24,6 +28,11 @@ a, a:visited, a:focus {
 @font-face {
     font-family: 'Adelle Light Italic';
     src: url(/assets/fonts/Adelle_LightItalic.otf);
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url(/assets/fonts/ProximaNova-Reg.otf);
 }
 
 @font-face {
