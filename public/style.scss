@@ -55,37 +55,37 @@ a, a:visited, a:focus {
 
 
 /* header and hero MQs section ****************/
-.hero {
-    background-image: url(/assets/hero.png);
-    background-repeat: no-repeat;
-    min-height: 490px;
-    padding-bottom: 45px;
-}
+// .hero {
+//     background-image: url(/assets/hero.png);
+//     background-repeat: no-repeat;
+//     min-height: 490px;
+//     padding-bottom: 45px;
+// }
 
-.hero .wrapper {
-    max-width: 1024px;
-    margin: auto;
-}
+// .hero .wrapper {
+//     max-width: 1024px;
+//     margin: auto;
+// }
 
-.hero .header .mattr-text-logo {
-    margin: 0 0 0 24px;
-}
+// .hero .header .mattr-text-logo {
+//     margin: 0 0 0 24px;
+// }
 
-.hero .header .header__right--blog {
-    font-family: 'Proxima Nova';
-    color: #fb0059;
-    font-size: 12px;
-    letter-spacing: 1px;
-    margin: 2px 17px 0 0;
-}
+// .hero .header .header__right--blog {
+//     font-family: 'Proxima Nova';
+//     color: #fb0059;
+//     font-size: 12px;
+//     letter-spacing: 1px;
+//     margin: 2px 17px 0 0;
+// }
 
-.hero .header .header__right--signin {
-    font-family: "Proxima Nova";
-    color: #fb0059;
-    font-size: 12px;
-    letter-spacing: 1px;
-    margin: 2px 29px 0 0;
-}
+// .hero .header .header__right--signin {
+//     font-family: "Proxima Nova";
+//     color: #fb0059;
+//     font-size: 12px;
+//     letter-spacing: 1px;
+//     margin: 2px 29px 0 0;
+// }
     
 
 
@@ -96,9 +96,17 @@ a, a:visited, a:focus {
 
 
 /* media queries for responsive rendering *********************/
-@media only screen and (min-width: 980px) {
+@media only screen and (min-width: 1025px) {
+    .hero .wrapper {
+        max-width: 1024px;
+        margin: auto;
+    }
     .hero {
         background-size: 102%;
+        background-image: url(/assets/hero.png);
+        background-repeat: no-repeat;
+        min-height: 490px;
+        padding-bottom: 45px;
     }
     .hero .header {
         max-width: 975px;
@@ -116,10 +124,18 @@ a, a:visited, a:focus {
 
 
 
-@media only screen and (min-width: 800px) and (max-width: 979px) {
+@media (min-width: 800px) and (max-width: 1024px) {
+    .hero .wrapper {
+        max-width: 1024px;
+        margin: auto;
+    }
     .hero {
         background-position: 66% 0%;
         background-size: 137%;
+        background-image: url(/assets/hero.png);
+        background-repeat: no-repeat;
+        min-height: 490px;
+        padding-bottom: 45px;
     }
     .hero .header {
         max-width: 975px;
@@ -137,10 +153,18 @@ a, a:visited, a:focus {
 
 
 
-@media only screen and (min-width: 600px) and (max-width: 799px) {
+@media (min-width: 600px) and (max-width: 799px) {
+    .hero .wrapper {
+        max-width: 1024px;
+        margin: auto;
+    }
     .hero {
         background-position: 66% 0%;
         background-size: 174%;
+        background-image: url(/assets/hero.png);
+        background-repeat: no-repeat;
+        min-height: 490px;
+        padding-bottom: 45px;
     }
     .hero .header {
         max-width: 975px;
@@ -158,10 +182,18 @@ a, a:visited, a:focus {
 
 
 
-@media only screen and (min-width: 446px) and (max-width: 599px) {
+@media (min-width: 481px) and (max-width: 599px) {
+    .hero .wrapper {
+        max-width: 1024px;
+        margin: auto;
+    }
     .hero {
         background-position: 48% 0%;
         background-size: 242%;
+        background-image: url(/assets/hero.png);
+        background-repeat: no-repeat;
+        min-height: 490px;
+        padding-bottom: 45px;
     }
     .hero .header {
         max-width: 975px;
@@ -179,10 +211,37 @@ a, a:visited, a:focus {
 
 
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
+    .hero .header .mattr-text-logo {
+        margin: 0 0 0 4px;
+    }
+    
+    .hero .header .header__right--blog {
+        font-family: 'Proxima Nova';
+        color: #fb0059;
+        font-size: 14px;
+        letter-spacing: 1px;
+        margin: 2px 7px 0 0;
+    }
+    
+    .hero .header .header__right--signin {
+        font-family: "Proxima Nova";
+        color: #fb0059;
+        font-size: 10px;
+        letter-spacing: 1px;
+        margin: 2px 9px 0 0;
+    }
+    .hero .wrapper {
+        max-width: 400px;
+        margin: auto;
+    }
     .hero {
         background-position: 0% 0%;
         background-size: 271%;
+        background-image: url(/assets/hero.png);
+        background-repeat: no-repeat;
+        min-height: 490px;
+        padding-bottom: 45px;
     }
     .hero .header {
         max-width: 400px;
@@ -393,6 +452,23 @@ input::placeholder {
         margin: auto;
         width: 380px;
         padding-left: 20px;
+    }
+    .content .block .image {
+        margin: 0 0 20px 80px;
+    }
+}
+
+@media only screen and (max-device-width: 480px) {
+    .content {
+        height: 2375px;
+        max-width: 480px;
+        margin: auto;
+    }
+    .content .block {
+        float: left;
+        margin: auto;
+        width: 480px;
+        // padding-left: 20px;
     }
     .content .block .image {
         margin: 0 0 20px 80px;
