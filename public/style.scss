@@ -60,6 +60,22 @@ a, a:visited, a:focus {
 
 
 
+// Hero and header
+.hero .wrapper {
+    margin: auto;
+}
+
+.hero {
+    background-image: url(/assets/hero.png);
+    background-repeat: no-repeat;
+    padding-bottom: 45px;
+}
+
+.hero .header {
+    margin: auto;
+    padding: 24px 0 0 0;
+}
+
 .hero .header .mattr-text-logo {
     margin: 0 0 0 24px;
 }
@@ -79,13 +95,10 @@ a, a:visited, a:focus {
     letter-spacing: 1px;
     margin: 2px 29px 0 0;
 }
-    
 
 
 
-
-
-/* intro section ****************************/
+// Intro
 .intro {
     margin: 74px auto auto auto;
     text-align: center;
@@ -95,25 +108,25 @@ a, a:visited, a:focus {
     margin: 0 0 22px 0;
 }
 
-.intro .intro__text__center {
+.hero .intro__text__center {
     margin: 0 0 52px 0;
     // max-width: 443px;
+    text-align: center;
 }
 
-// .intro__text--large {
-//     font-size: 48px;
-//     color: #FFFFFF;
-//     font-family: 'Adelle Light';
-//     letter-spacing: 1px;
-//     line-height: 44px;
-// }
+.hero .intro__text__top {
+    text-align: center;
+}
 
-// .intro__text--small {
-//     color: #FFFFFF;
-//     font-family: 'Proxima Nova';
-//     line-height: 8px;
-//     margin: 11px 0 0 0;
-// }
+.hero .intro__text--small {
+    font-size: 14px;
+    text-shadow: 0 0 101px rgba(0, 0, 0, 0.9);
+    color: #ffffff;
+    font-family: "Proxima Nova";
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.35px;
+}
 
 .intro__text--medium {
     font-size: 13px;
@@ -124,15 +137,21 @@ a, a:visited, a:focus {
     margin: 0 0 0 0;
 }
 
+.intro__text--large {
+    color: #FFFFFF;
+    font-family: 'Adelle Light';
+    letter-spacing: 1px;
+}
 
 
-/* 'request an invite' box *******************/
-// .invite {
-//     width: 328px;
-//     height: 50px;
-//     background-color: #ffffff;
-//     margin: 8px auto;
-// }
+
+// Invite
+.invite {
+    width: 328px;
+    height: 50px;
+    background-color: #ffffff;
+    margin: 8px auto;
+}
 
 .email__field {
     width: 180px;
@@ -176,60 +195,27 @@ input::placeholder {
 
 
 
-
-
-
-
-
-
-
 /* media queries for responsive rendering *********************/
 @media (min-width: 1025px) {
     .hero .wrapper {
         max-width: 1024px;
-        margin: auto;
     }
     .hero {
         background-size: 102%;
-        background-image: url(/assets/hero.png);
-        background-repeat: no-repeat;
         min-height: 490px;
-        padding-bottom: 45px;
     }
     .hero .header {
         max-width: 975px;
-        margin: auto;
-        padding: 24px 0 0 0;
     }
     .hero .intro {
         width: 485px;
     }
-    .hero .intro__text__center {
-        text-align: center;
-    }
     .hero .intro__text--small {
-        font-size: 14px;
         width: 455px;
-        // height: 70px;
-        text-shadow: 0 0 101px rgba(0, 0, 0, 0.9);
-        color: #ffffff;
-        font-family: "Proxima Nova";
-        font-weight: 400;
-        line-height: 19px;
-        letter-spacing: 0.35px;
     }
     .intro__text--large {
         font-size: 48px;
-        color: #FFFFFF;
-        font-family: 'Adelle Light';
-        letter-spacing: 1px;
         line-height: 44px;
-    }
-    .invite {
-        width: 328px;
-        height: 50px;
-        background-color: #ffffff;
-        margin: 8px auto;
     }
 }
 
@@ -239,50 +225,24 @@ input::placeholder {
 @media (min-width: 800px) and (max-width: 1024px) {
     .hero .wrapper {
         max-width: 800px;
-        margin: auto;
     }
     .hero {
         background-position: 66% 0%;
         background-size: 137%;
-        background-image: url(/assets/hero.png);
-        background-repeat: no-repeat;
         min-height: 490px;
-        padding-bottom: 45px;
     }
     .hero .header {
-        max-width: 800px;
-        margin: auto;
-        padding: 24px 0 0 0;
+        max-width: 975px;
     }
     .hero .intro {
         width: 485px;
     }
-    .hero .intro__text__center {
-        text-align: center;
-    }
     .hero .intro__text--small {
-        font-size: 14px;
         width: 455px;
-        // height: 70px;
-        text-shadow: 0 0 101px rgba(0, 0, 0, 0.9);
-        color: #ffffff;
-        font-family: "Proxima Nova";
-        font-weight: 400;
-        line-height: 19px;
-        letter-spacing: 0.35px;
     }
     .intro__text--large {
         font-size: 48px;
-        color: #FFFFFF;
-        font-family: 'Adelle Light';
-        letter-spacing: 1px;
         line-height: 44px;
-    }
-    .invite {
-        width: 328px;
-        height: 50px;
-        background-color: #ffffff;
-        margin: 8px auto;
     }
 }
 
@@ -291,51 +251,25 @@ input::placeholder {
 
 @media (min-width: 500px) and (max-width: 799px) {
     .hero .wrapper {
-        max-width: 1024px;
-        margin: auto;
+        max-width: 500px;
     }
     .hero {
         background-position: 66% 0%;
         background-size: 205%;
-        background-image: url(/assets/hero.png);
-        background-repeat: no-repeat;
         min-height: 490px;
-        padding-bottom: 45px;
     }
     .hero .header {
-        max-width: 975px;
-        margin: auto;
-        padding: 24px 0 0 0;
+        max-width: 500px;
     }
     .hero .intro {
         width: 485px;
     }
-    .hero .intro__text__center {
-        text-align: center;
-    }
     .hero .intro__text--small {
-        font-size: 14px;
         width: 455px;
-        // height: 70px;
-        text-shadow: 0 0 101px rgba(0, 0, 0, 0.9);
-        color: #ffffff;
-        font-family: "Proxima Nova";
-        font-weight: 400;
-        line-height: 19px;
-        letter-spacing: 0.35px;
     }
     .intro__text--large {
         font-size: 48px;
-        color: #FFFFFF;
-        font-family: 'Adelle Light';
-        letter-spacing: 1px;
         line-height: 44px;
-    }
-    .invite {
-        width: 328px;
-        height: 50px;
-        background-color: #ffffff;
-        margin: 8px auto;
     }
 }
 
@@ -345,53 +279,24 @@ input::placeholder {
 @media only screen and (min-width: 325px) and (max-width: 499px) {
     .hero .wrapper {
         max-width: 400px;
-        margin: auto;
     }
     .hero {
         background-position: 0% 0%;
         background-size: 271%;
-        background-image: url(/assets/hero.png);
-        background-repeat: no-repeat;
         min-height: 490px;
-        padding-bottom: 45px;
     }
     .hero .header {
         max-width: 400px;
-        margin: auto;
-        padding: 24px 0 0 0;
     }
     .hero .intro {
         width: 325px;
     }
-    .hero .intro__text__top {
-        text-align: center;
-    }
-    .hero .intro__text__center {
-        text-align: center;
-    }
     .hero .intro__text--small {
-        font-size: 14px;
         width: 325px;
-        // height: 70px;
-        text-shadow: 0 0 101px rgba(0, 0, 0, 0.9);
-        color: #ffffff;
-        font-family: "Proxima Nova";
-        font-weight: 400;
-        line-height: 19px;
-        letter-spacing: 1.35px;
     }
     .intro__text--large {
         font-size: 38px;
-        color: #FFFFFF;
-        font-family: 'Adelle Light';
-        letter-spacing: 1px;
         line-height: 34px;
-    }
-    .invite {
-        width: 328px;
-        height: 50px;
-        background-color: #ffffff;
-        margin: 8px auto;
     }
     .mattr-text-logo {
         display: none;
