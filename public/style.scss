@@ -208,7 +208,8 @@ input::placeholder {
 
 /* media queries for responsive rendering *********************/
 // @media (min-width: 1025px) {
-    @media only screen and (min-device-width: 1024px) {
+    // @media only screen and (min-device-width: 1024px) {
+    @media (min-width: 1024px) {
     .hero .wrapper {
         max-width: 1024px;
     }
@@ -235,7 +236,8 @@ input::placeholder {
 
 
 // @media (min-width: 800px) and (max-width: 1024px) {
-    @media only screen and (max-device-width: 1023px) {
+    // @media only screen and (max-device-width: 1023px) {
+    @media (max-width: 1023px) {
     .hero .wrapper {
         max-width: 800px;
     }
@@ -263,7 +265,8 @@ input::placeholder {
 
 
 // @media (min-width: 500px) and (max-width: 799px) {
-    @media only screen and (max-device-width: 799px) {
+    // @media only screen and (max-device-width: 799px) {
+    @media (max-width: 799px) {
     .hero .wrapper {
         max-width: 500px;
     }
@@ -291,7 +294,8 @@ input::placeholder {
 
 
 // @media only screen and (min-width: 325px) and (max-width: 499px) {
-    @media only screen and (max-device-width: 499px) {
+    // @media only screen and (max-device-width: 499px) {
+    @media (max-width: 499px) {
     .hero .wrapper {
         max-width: 499px;
         // margin: auto;
@@ -361,7 +365,8 @@ input::placeholder {
 
 /* main section ***********************************/
 // @media (min-width: 1024px) and (max-width: 4400px) {
-    @media only screen and (min-device-width: 1024px) {
+    // @media only screen and (min-device-width: 1024px) {
+    @media (min-width: 1024px) {
     .content {
         height: 800px;
         max-width: 1024px;
@@ -388,7 +393,8 @@ input::placeholder {
 }
 
 // @media (min-width: 870px) and (max-width: 1023px) {
-    @media only screen and (max-device-width: 1023px) {
+    // @media only screen and (max-device-width: 1023px) {
+    @media (max-width: 1023px) {
     .content {
         height: 800px;
         max-width: 870px;
@@ -418,7 +424,8 @@ input::placeholder {
 
 
 // @media (min-width: 750px) and (max-width: 869px) {
-    @media only screen and (max-device-width: 869px) {
+    // @media only screen and (max-device-width: 869px) {
+    @media (max-width: 869px) {
     .content {
         height: 1200px;
         max-width: 750px;
@@ -448,7 +455,8 @@ input::placeholder {
 
 
 // @media (min-width: 615px) and (max-width: 749px) {
-    @media only screen and (max-device-width: 749px) {
+    // @media only screen and (max-device-width: 749px) {
+    @media (max-width: 749px) {
     .content {
         height: 1200px;
         max-width: 615px;
@@ -478,7 +486,8 @@ input::placeholder {
 
 
 // @media (min-width: 400px) and (max-width: 614px) {
-@media only screen and (max-device-width: 614px) {
+// @media only screen and (max-device-width: 614px) {
+    @media (max-width: 614px) {
     .content {
         height: 2375px;
         max-width: 400px;
@@ -507,7 +516,8 @@ input::placeholder {
 
 
 
-@media only screen and (max-device-width: 480px) {
+// @media only screen and (max-device-width: 480px) {
+    @media (max-width: 480px) {
     .content {
         height: 2375px;
         max-width: 480px;
@@ -533,7 +543,8 @@ input::placeholder {
     }
 }
 
-@media only screen and (max-device-width: 375px) {
+// @media only screen and (max-device-width: 375px) {
+    @media (max-width: 375px) {
     .content {
         height: 2375px;
         max-width: 375px;
