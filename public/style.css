@@ -417,4 +417,38 @@ input::placeholder {
   line-height: 20px;
   text-align: left; }
 
+.footer {
+  background-image: url(assets/footer-bg.png);
+  height: 330px; }
+
+.footer .wrapper {
+  max-width: 800px; }
+
+.address {
+  max-width: 245px;
+  float: left; }
+
+.address__title {
+  color: #df0e6b;
+  font-family: "Proxima Nova";
+  font-size: 19px;
+  letter-spacing: 0.19px;
+  line-height: 30px; }
+
+.address__body {
+  color: #416589;
+  font-family: "Proxima Nova";
+  font-size: 18px;
+  letter-spacing: 0.18px;
+  line-height: 20px; }
+
+.address__email {
+  color: #416589;
+  font-family: "Proxima Nova Semibold";
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.65px;
+  line-height: 40px;
+  text-transform: uppercase; }
+
 /*# sourceMappingURL=style.css.map */
