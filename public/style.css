@@ -3,12 +3,6 @@ html, body {
   margin: 0px;
   background: #ececec; }
 
-input:focus, select:focus, textarea:focus, button:focus {
-  outline: none; }
-
-textarea:focus, input:focus {
-  outline: none; }
-
 /* disable ALL visited links from underlining and changing color */
 a, a:visited, a:focus {
   text-decoration: none; }
@@ -116,17 +110,19 @@ a, a:visited, a:focus {
 .email__field {
   width: 180px;
   height: 30px;
-  font-size: 14px;
+  font-size: 15px;
   font-family: 'Proxima Nova Semibold';
   color: black;
   margin: 7.5px 0 0 0;
-  outline: none; }
+  border: none; }
 
 input::placeholder {
   font-family: 'Proxima Nova Semibold Italic';
   color: #A5A5A5;
-  opacity: 0.5;
-  outline: 0; }
+  opacity: 0.5; }
+
+input:focus {
+  outline: none; }
 
 .invite__request {
   width: 125px;
