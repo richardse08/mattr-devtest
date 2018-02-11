@@ -61,6 +61,10 @@ a, a:visited, a:focus {
     float: right;
 }
 
+.clear {
+    clear: both;
+}
+
 
 
 
@@ -179,6 +183,7 @@ input::placeholder {
     font-family: 'Proxima Nova Semibold Italic';
     color: #A5A5A5;
     opacity: 0.5;
+    outline: 0;
 }
 
 .invite__request {
@@ -631,19 +636,36 @@ input::placeholder {
 
 .footer {
     background-image: url(assets/footer-bg.png);
-    height: 330px;
 }
 
 .footer .wrapper {
-    max-width: 800px;
+    margin: auto;
 }
 
-.address {
-    max-width: 245px;
+.address, .social, .company {
     float: left;
+    margin: auto;
 }
 
-.address__title {
+.legals {
+    margin: auto;
+    padding-left: 40px;
+}
+
+.footer .wrapper .address {
+    width: 270px;
+    padding-left: 40px;
+}
+.footer .wrapper .social {
+    width: 120px;
+    padding-left: 45px;
+}
+.footer .wrapper .company {
+    width: 120px;
+    padding-left: 45px;
+}
+
+.address__title, .social__title, .company__title {
     color: #df0e6b;
     font-family: "Proxima Nova";
     font-size: 19px;
@@ -651,7 +673,7 @@ input::placeholder {
     line-height: 30px;
 }
 
-.address__body {
+.address__body, .social__body, .company__body, .legals {
     color: #416589;
     font-family: "Proxima Nova";
     font-size: 18px;
@@ -667,4 +689,60 @@ input::placeholder {
     letter-spacing: 0.65px;
     line-height: 40px;
     text-transform: uppercase;
+}
+
+.social__top, .social__middle, .social__bottom {
+    height: 30px;
+}
+
+.social__icon {
+    padding: 2px 10px 0 0px;
+}
+
+.company__top, .company__middle, .company__bottom {
+    height: 30px;
+}
+
+
+
+
+
+
+
+
+// Address MQs
+@media (min-width: 1024px) {
+    .footer {
+        height: 350px;
+    }
+    .footer .wrapper {
+        max-width: 1024px;
+    }
+    .address, .social, .company, .legals {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .footer {
+        height: 420px;
+    }
+    .footer .wrapper {
+        max-width: 700px;
+    }
+    .address, .social, .company, .legals {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 660px) {
+    .footer {
+        height: 600px;
+    }
+    .footer .wrapper {
+        max-width: 400px;
+    }
+    .address, .social, .company, .legals {
+        padding-top: 50px;
+    }
 }
