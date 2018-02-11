@@ -13,6 +13,25 @@ a, a:visited, a:focus {
 
 
 
+/* helpers *************************************/
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.display-none {
+    display: none;
+}
+
+
+
 /* font sets **********************************/
 @font-face {
     font-family: 'Adelle Light';
@@ -42,21 +61,6 @@ a, a:visited, a:focus {
 @font-face {
     font-family: 'Proxima Nova Semibold Italic';
     src: url(/assets/fonts/ProximaNova-SboldItalic.otf);
-}
-
-
-
-/* helpers *************************************/
-.float-left {
-    float: left;
-}
-
-.float-right {
-    float: right;
-}
-
-.clear {
-    clear: both;
 }
 
 
@@ -747,4 +751,34 @@ input:focus {
     .address, .social, .company, .legals {
         padding-top: 50px;
     }
+}
+
+
+
+
+
+
+
+
+
+// Background-overlay for lightbox modal
+.background-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(10,10,10,.45);
+    overflow-y: scroll;
+}
+
+.lightbox {
+    background-color: white;
+    box-shadow: 0px 0px 15px 0px #212121;
+    margin-left: 50%;
+    margin-top: 350px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 101;
 }
