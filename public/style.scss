@@ -667,10 +667,18 @@ input:focus {
     line-height: 30px;
 }
 
-.address__body, .social__body, .company__body, .legals {
+.address__body, .social__body, .company__body {
     color: #416589;
     font-family: "Proxima Nova";
     font-size: 18px;
+    letter-spacing: 0.18px;
+    line-height: 20px;
+}
+
+.legals {
+    color: #416589;
+    font-family: "Proxima Nova";
+    font-size: 14px;
     letter-spacing: 0.18px;
     line-height: 20px;
 }
@@ -707,7 +715,7 @@ input:focus {
 // Address MQs
 @media (min-width: 1024px) {
     .footer {
-        height: 350px;
+        height: 300px;
     }
     .footer .wrapper {
         max-width: 1024px;
@@ -719,7 +727,7 @@ input:focus {
 
 @media (max-width: 1023px) {
     .footer {
-        height: 420px;
+        height: 430px;
     }
     .footer .wrapper {
         max-width: 700px;
@@ -731,7 +739,7 @@ input:focus {
 
 @media (max-width: 660px) {
     .footer {
-        height: 600px;
+        height: 650px;
     }
     .footer .wrapper {
         max-width: 400px;
