@@ -529,6 +529,7 @@ input:focus {
   margin-top: 350px;
   transform: translate(-50%, -50%);
   position: absolute;
-  z-index: 101; }
+  z-index: 101;
+  width: 50%; }
 
 /*# sourceMappingURL=style.css.map */
