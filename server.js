@@ -10,7 +10,8 @@ var port = process.env.PORT || 3000;
 // Configure Mongo database
 var MongoClient = require('mongodb').MongoClient; // Require mongodb
 var doesCollectionExist = true; // Set checker tool so only one document is made
-var url = "mongodb://localhost:27017/mydb"; // Set a URL for my database
+// var url = "mongodb://localhost:27017/mydb"; // Set a URL for my database
+var url = 'mongodb://heroku_ntrr7rs8:tnlbaftr91a687mraljvejr491@ds239988.mlab.com:39988/heroku_ntrr7rs8';
 
 
 

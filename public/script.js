@@ -58,6 +58,14 @@ $(document).ready(function() {
             console.log('email has been clicked');
         });
 
+        // Click enter key fire email function
+        $('.email__field').keyup(function (enterEvent) {
+            var key = enterEvent.which;
+            if(key == 13) {
+                $('.js-email-link').click();
+            }
+        });
+
         
 
 
