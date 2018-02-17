@@ -54,9 +54,14 @@ $(document).ready(function() {
             // Send the email address to the emailSave function to send to the database
             emailSave(emailValue);
 
+            // Clear out the value of the input field
+            $('.email__field').val('');
+
             // Checkpoint
             console.log('email has been clicked');
         });
+
+
 
         // Click enter key fire email function
         $('.email__field').keyup(function (enterEvent) {
