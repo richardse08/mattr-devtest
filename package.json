@@ -26,7 +26,8 @@
   "homepage": "https://github.com/richardse08/mattr-devtest#readme",
   "dependencies": {
     "ejs": "^2.5.7",
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "mongodb": "^2.2.33"
   },
   "engines": {
     "node": "8.9.4"
