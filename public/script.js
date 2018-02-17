@@ -20,6 +20,14 @@ $(document).ready(function() {
             $('.background-overlay').addClass('display-none');
         });
 
+
+
+
+
+
+
+
+
         // Create function to save email and send it to database
         function emailSave(email) {
 
@@ -27,12 +35,15 @@ $(document).ready(function() {
             var testEmail = 'eric.richards.finance@gmail.com';
 
             // Send it
-            $.get( "/data-save", { testEmail: testEmail}, function(data) {
+            $.get( "/email-save", { emailAddress: email}, function(data) {
             
                 console.log(data);
-                
+                console.log('checkpoint');                
             });
+
         };
+
+
 
         // Click email link
         $('.js-email-link').on('click', function() {
