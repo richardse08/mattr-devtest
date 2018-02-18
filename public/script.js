@@ -23,6 +23,20 @@ $(document).ready(function() {
 
 
 
+        function validateEmail (email) {
+            if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+                return (true)
+                
+                // Send the email address to the emailSave function to send to the database
+                emailSave(email);
+            }
+            else {
+                alert('Please enter a valid email address')
+                return (false)
+            }
+        };
+
+
 
 
 
@@ -51,14 +65,15 @@ $(document).ready(function() {
             // Get value of the input tag on the front end and save as a variable
             var emailValue = $('.email__field').val();
 
-            // Send the email address to the emailSave function to send to the database
-            emailSave(emailValue);
+            // Check if email is valid
+            validateEmail(emailValue);
 
             // Clear out the value of the input field
             $('.email__field').val('');
 
             // Checkpoint
             console.log('email has been clicked');
+
         });
 
 
@@ -71,7 +86,14 @@ $(document).ready(function() {
             }
         });
 
-        
+
+
+
+
+
+
+
+
 
 
 

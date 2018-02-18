@@ -27,23 +27,6 @@ MongoClient.connect(url, function(err, db) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // This will serve the public docs
 app.use('/', express.static(__dirname + '/public'));
 app.set('view engine', 'ejs'); // Set view engine and give extension
@@ -60,34 +43,7 @@ app.get('/', function(request, response) {
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// API to receive AJAX hits from client
-// This inserts the data object (page, selection, count) into pollCollection
+// API to receive AJAX hits from client ,this inserts the data object into emailDump
 app.get("/email-save", function(request, response) {    
     
     // Create request parameters (this may only need to be one?)
