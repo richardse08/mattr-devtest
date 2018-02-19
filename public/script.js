@@ -25,14 +25,17 @@ $(document).ready(function() {
 
         function validateEmail (email) {
             if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
-                return (true)
-                
+
                 // Send the email address to the emailSave function to send to the database
                 emailSave(email);
+
+                // Simple alert, need to change
+                alert('Your request has been saved. Thank you!');
             }
             else {
+
+                // Simple alert, need to change
                 alert('Please enter a valid email address')
-                return (false)
             }
         };
 
