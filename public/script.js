@@ -31,6 +31,14 @@ $(document).ready(function() {
 
                 // Simple alert, need to change
                 alert('Your request has been saved. Thank you!');
+
+                // Remove display-none on checkbox
+                $('.checkbox').removeClass('display-none');
+
+                // Change submit button text
+                var requested = 'REQUESTED';
+                // $('invite__request--text').html(requested);
+                // invite__request--text.innerHTML(requested);
             }
             else {
 
