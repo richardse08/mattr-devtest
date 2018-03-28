@@ -1,41 +1,18 @@
 $(document).ready(function() {
 
+    // Get screen width
+    var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 
 
-
-    window.onscroll = function() {
-        $('.nav').removeClass('display-none');
-    };
-    
-
-
-
-
-
-
-    // Get sticky-nav
-    var js_nav = document.getElementById("js-nav");
-
-    // Get the offset position of the sticky-nav
-    var sticky = js_nav.offsetTop;
-
-    
-
-
-
-
-
-    // Add/remove sticky class
-    function sticky_nav_scroll() {  
-        if (window.pageYOffset >= sticky) {
+    // Show nav bar unless user is at the top
+    function sticky_nav_scroll() {
+        if (window.pageYOffset > 0 && w >= 500) {
             $('.nav').removeClass('display-none');
-        } 
-        
+        }
         else {
             $('.nav').addClass('display-none');
         }
-        
-    } // end sticky_nav_scroll
+    }
 
     // If user scrolls, fire scroll function
     window.onscroll = function() {
