@@ -1,66 +1,66 @@
 /* structuring general environment *************/
 html, body {
-    margin: 0px;
-    background: #ececec;
+  margin: 0px;
+  background: #ececec;
 }
 
 
 
 /* disable ALL visited links from underlining and changing color */
 a, a:visited, a:focus {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 
 
 /* helpers *************************************/
 .float-left {
-    float: left;
+  float: left;
 }
 
 .float-right {
-    float: right;
+  float: right;
 }
 
 .clear {
-    clear: both;
+  clear: both;
 }
 
 .display-none {
-    display: none;
+  display: none;
 }
 
 
 
 /* font sets **********************************/
 @font-face {
-    font-family: 'Adelle Light';
-    src: url(/assets/fonts/Adelle_light.otf);
+  font-family: 'Adelle Light';
+  src: url(/assets/fonts/Adelle_light.otf);
 }
 
 @font-face {
-    font-family: 'Adelle Light Italic';
-    src: url(/assets/fonts/Adelle_LightItalic.otf);
+  font-family: 'Adelle Light Italic';
+  src: url(/assets/fonts/Adelle_LightItalic.otf);
 }
 
 @font-face {
-    font-family: 'Proxima Nova';
-    src: url(/assets/fonts/ProximaNova-Reg.otf);
+  font-family: 'Proxima Nova';
+  src: url(/assets/fonts/ProximaNova-Reg.otf);
 }
 
 @font-face {
-    font-family: 'Proxima Nova RG';
-    src: url(/assets/fonts/ProximaNova-Reg.otf);
+  font-family: 'Proxima Nova RG';
+  src: url(/assets/fonts/ProximaNova-Reg.otf);
 }
 
 @font-face {
-    font-family: 'Proxima Nova Semibold';
-    src: url(/assets/fonts/ProximaNova-Semibold.otf);
+  font-family: 'Proxima Nova Semibold';
+  src: url(/assets/fonts/ProximaNova-Semibold.otf);
 }
 
 @font-face {
-    font-family: 'Proxima Nova Semibold Italic';
-    src: url(/assets/fonts/ProximaNova-SboldItalic.otf);
+  font-family: 'Proxima Nova Semibold Italic';
+  src: url(/assets/fonts/ProximaNova-SboldItalic.otf);
 }
 
 
@@ -73,132 +73,132 @@ a, a:visited, a:focus {
 
 // Hero and header
 .hero .wrapper {
-    margin: auto;
+  margin: auto;
 }
 
 .hero {
-    background-image: url(/assets/hero.png);
-    background-repeat: no-repeat;
-    padding-bottom: 45px;
+  background-image: url(/assets/hero.png);
+  background-repeat: no-repeat;
+  padding-bottom: 45px;
 }
 
 .hero .header {
-    margin: auto;
-    padding: 24px 0 0 0;
+  margin: auto;
+  padding: 24px 0 0 0;
 }
 
 .hero .header .mattr-text-logo {
-    margin: 0 0 0 24px;
+  margin: 0 0 0 24px;
 }
 
 .hero .header .header__right--blog {
-    font-family: 'Proxima Nova';
-    color: #fb0059;
-    font-size: 12px;
-    letter-spacing: 1px;
-    margin: 2px 17px 0 0;
+  font-family: 'Proxima Nova';
+  color: #fb0059;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin: 2px 17px 0 0;
 }
 
 .hero .header .header__right--signin {
-    font-family: "Proxima Nova";
-    color: #fb0059;
-    font-size: 12px;
-    letter-spacing: 1px;
-    margin: 2px 29px 0 0;
+  font-family: "Proxima Nova";
+  color: #fb0059;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin: 2px 29px 0 0;
 }
 
 
 
 // Intro
 .intro {
-    margin: 74px auto auto auto;
-    text-align: center;
+  margin: 74px auto auto auto;
+  text-align: center;
 }
 
 .mattr-logo {
-    margin: 0 0 22px 0;
+  margin: 0 0 22px 0;
 }
 
 .hero .intro__text__center {
-    margin: 0 0 52px 0;
-    // max-width: 443px;
-    text-align: center;
+  margin: 0 0 52px 0;
+  // max-width: 443px;
+  text-align: center;
 }
 
 .hero .intro__text__top {
-    text-align: center;
+  text-align: center;
 }
 
 .hero .intro__text--small {
-    font-size: 14px;
-    text-shadow: 0 0 101px rgba(0, 0, 0, 0.9);
-    color: #ffffff;
-    font-family: "Proxima Nova";
-    font-weight: 400;
-    line-height: 19px;
-    letter-spacing: 0.35px;
+  font-size: 14px;
+  text-shadow: 0 0 101px rgba(0, 0, 0, 0.9);
+  color: #ffffff;
+  font-family: "Proxima Nova";
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.35px;
 }
 
 .intro__text--medium {
-    font-size: 13px;
-    color: #FFFFFF;
-    font-family: 'Proxima Nova';
-    letter-spacing: 1px;
-    line-height: 18px;
-    margin: 0 0 0 0;
+  font-size: 13px;
+  color: #FFFFFF;
+  font-family: 'Proxima Nova';
+  letter-spacing: 1px;
+  line-height: 18px;
+  margin: 0 0 0 0;
 }
 
 .intro__text--large {
-    color: #FFFFFF;
-    font-family: 'Adelle Light';
-    letter-spacing: 1px;
+  color: #FFFFFF;
+  font-family: 'Adelle Light';
+  letter-spacing: 1px;
 }
 
 
 
 // Invite
 .invite {
-    width: 338px;
-    height: 50px;
-    background-color: #ffffff;
-    margin: 8px auto;
+  width: 338px;
+  height: 50px;
+  background-color: #ffffff;
+  margin: 8px auto;
 }
 
 .email__field {
-    width: 180px;
-    height: 30px;
-    font-size: 15px;
-    font-family: 'Proxima Nova Semibold';
-    color: black;
-    margin: 7.5px 0 0 0;
-    border: none;
+  width: 180px;
+  height: 30px;
+  font-size: 15px;
+  font-family: 'Proxima Nova Semibold';
+  color: black;
+  margin: 7.5px 0 0 0;
+  border: none;
 }
 
 input::placeholder {
-    font-family: 'Proxima Nova Semibold Italic';
-    color: #A5A5A5;
-    opacity: 0.5;
+  font-family: 'Proxima Nova Semibold Italic';
+  color: #A5A5A5;
+  opacity: 0.5;
 }
 
 input:focus {
-    outline: none;
+  outline: none;
 }
 
 .invite__request {
-    width: 125px;
-    height: 40px;
-    background-image: url(assets/layer.png);
-    margin: 5px 5px 0 0;
-    padding: 11px 0 0 0;
-    box-sizing: border-box;
+  width: 125px;
+  height: 40px;
+  background-image: url(assets/layer.png);
+  margin: 5px 5px 0 0;
+  padding: 11px 0 0 0;
+  box-sizing: border-box;
 }
 
 .invite__request--text {
-    color: #ffffff;
-    font-family: 'Proxima Nova Semibold';
-    font-size: 12px;
-    border-radius: 5px;
-    text-align: center;
+  color: #ffffff;
+  font-family: 'Proxima Nova Semibold';
+  font-size: 12px;
+  border-radius: 5px;
+  text-align: center;
 }
 
 
@@ -211,121 +211,121 @@ input:focus {
 
 /* media queries for responsive rendering *********************/
 // @media (min-width: 1025px) {
-    // @media only screen and (min-device-width: 1024px) {
-    @media (min-width: 1024px) {
-    .hero .wrapper {
-        max-width: 1024px;
-    }
-    .hero {
-        background-size: 102%;
-        min-height: 490px;
-    }
-    .hero .header {
-        max-width: 975px;
-    }
-    .hero .intro {
-        width: 485px;
-    }
-    .hero .intro__text--small {
-        width: 455px;
-    }
-    .intro__text--large {
-        font-size: 48px;
-        line-height: 44px;
-    }
+  // @media only screen and (min-device-width: 1024px) {
+  @media (min-width: 1024px) {
+  .hero .wrapper {
+      max-width: 1024px;
+  }
+  .hero {
+      background-size: 102%;
+      min-height: 490px;
+  }
+  .hero .header {
+      max-width: 975px;
+  }
+  .hero .intro {
+      width: 485px;
+  }
+  .hero .intro__text--small {
+      width: 455px;
+  }
+  .intro__text--large {
+      font-size: 48px;
+      line-height: 44px;
+  }
 }
 
 
 
 
 // @media (min-width: 800px) and (max-width: 1024px) {
-    // @media only screen and (max-device-width: 1023px) {
-    @media (max-width: 1023px) {
-    .hero .wrapper {
-        max-width: 800px;
-    }
-    .hero {
-        background-position: 66% 0%;
-        background-size: 137%;
-        min-height: 490px;
-    }
-    .hero .header {
-        max-width: 975px;
-    }
-    .hero .intro {
-        width: 485px;
-    }
-    .hero .intro__text--small {
-        width: 455px;
-    }
-    .intro__text--large {
-        font-size: 48px;
-        line-height: 44px;
-    }
+  // @media only screen and (max-device-width: 1023px) {
+  @media (max-width: 1023px) {
+  .hero .wrapper {
+      max-width: 800px;
+  }
+  .hero {
+      background-position: 66% 0%;
+      background-size: 137%;
+      min-height: 490px;
+  }
+  .hero .header {
+      max-width: 975px;
+  }
+  .hero .intro {
+      width: 485px;
+  }
+  .hero .intro__text--small {
+      width: 455px;
+  }
+  .intro__text--large {
+      font-size: 48px;
+      line-height: 44px;
+  }
 }
 
 
 
 
 // @media (min-width: 500px) and (max-width: 799px) {
-    // @media only screen and (max-device-width: 799px) {
-    @media (max-width: 799px) {
-    .hero .wrapper {
-        max-width: 500px;
-    }
-    .hero {
-        background-position: 66% 0%;
-        background-size: 205%;
-        min-height: 490px;
-    }
-    .hero .header {
-        max-width: 500px;
-    }
-    .hero .intro {
-        width: 485px;
-    }
-    .hero .intro__text--small {
-        width: 455px;
-    }
-    .intro__text--large {
-        font-size: 48px;
-        line-height: 44px;
-    }
+  // @media only screen and (max-device-width: 799px) {
+  @media (max-width: 799px) {
+  .hero .wrapper {
+      max-width: 500px;
+  }
+  .hero {
+      background-position: 66% 0%;
+      background-size: 205%;
+      min-height: 490px;
+  }
+  .hero .header {
+      max-width: 500px;
+  }
+  .hero .intro {
+      width: 485px;
+  }
+  .hero .intro__text--small {
+      width: 455px;
+  }
+  .intro__text--large {
+      font-size: 48px;
+      line-height: 44px;
+  }
 }
 
 
 
 
 // @media only screen and (min-width: 325px) and (max-width: 499px) {
-    // @media only screen and (max-device-width: 499px) {
-    @media (max-width: 499px) {
-    .hero .wrapper {
-        max-width: 499px;
-        // margin: auto;
-    }
-    .hero {
-        background-position: 0% 0%;
-        background-size: 271%;
-        min-height: 490px;
-        margin: auto;
-        max-width: 499px;
-    }
-    .hero .header {
-        max-width: 400px;
-    }
-    .hero .intro {
-        width: 325px;
-    }
-    .hero .intro__text--small {
-        width: 325px;
-    }
-    .intro__text--large {
-        font-size: 38px;
-        line-height: 34px;
-    }
-    .mattr-text-logo {
-        display: none;
-    }
+  // @media only screen and (max-device-width: 499px) {
+  @media (max-width: 499px) {
+  .hero .wrapper {
+      max-width: 499px;
+      // margin: auto;
+  }
+  .hero {
+      background-position: 0% 0%;
+      background-size: 271%;
+      min-height: 490px;
+      margin: auto;
+      max-width: 499px;
+  }
+  .hero .header {
+      max-width: 400px;
+  }
+  .hero .intro {
+      width: 325px;
+  }
+  .hero .intro__text--small {
+      width: 325px;
+  }
+  .intro__text--large {
+      font-size: 38px;
+      line-height: 34px;
+  }
+  .mattr-text-logo {
+      display: none;
+  }
 }
 
 
@@ -368,121 +368,121 @@ input:focus {
 
 /* main section ***********************************/
 // @media (min-width: 1024px) and (max-width: 4400px) {
-    // @media only screen and (min-device-width: 1024px) {
-    @media (min-width: 1024px) {
-    .content {
-        height: 800px;
-        max-width: 1024px;
-        margin: auto;
-    }
-    .content .block {
-        float: left;
-        margin: auto;
-        width: 290px;
-        padding-left: 40px;
-    }
-    .content .the-app {
-        height: 250px;
-        padding-top: 125px;
-    }
-    
-    .content .feature {
-        height: 375px;
-        padding-top: 25px;
-    }
-    .content .block .image {
-        margin: 0 0 20px 20px;
-    }
+  // @media only screen and (min-device-width: 1024px) {
+  @media (min-width: 1024px) {
+  .content {
+      height: 800px;
+      max-width: 1024px;
+      margin: auto;
+  }
+  .content .block {
+      float: left;
+      margin: auto;
+      width: 290px;
+      padding-left: 40px;
+  }
+  .content .the-app {
+      height: 250px;
+      padding-top: 125px;
+  }
+  
+  .content .feature {
+      height: 375px;
+      padding-top: 25px;
+  }
+  .content .block .image {
+      margin: 0 0 20px 20px;
+  }
 }
 
 // @media (min-width: 870px) and (max-width: 1023px) {
-    // @media only screen and (max-device-width: 1023px) {
-    @media (max-width: 1023px) {
-    .content {
-        height: 800px;
-        max-width: 870px;
-        margin: auto;
-    }
-    .content .block {
-        float: left;
-        margin: auto;
-        width: 270px;
-        padding-left: 15px;
-    }
-    .content .the-app {
-        height: 250px;
-        padding-top: 125px;
-    }
-    
-    .content .feature {
-        height: 375px;
-        padding-top: 25px;
-    }
-    .content .block .image {
-        margin: 0 0 20px 20px;
-    }
+  // @media only screen and (max-device-width: 1023px) {
+  @media (max-width: 1023px) {
+  .content {
+      height: 800px;
+      max-width: 870px;
+      margin: auto;
+  }
+  .content .block {
+      float: left;
+      margin: auto;
+      width: 270px;
+      padding-left: 15px;
+  }
+  .content .the-app {
+      height: 250px;
+      padding-top: 125px;
+  }
+  
+  .content .feature {
+      height: 375px;
+      padding-top: 25px;
+  }
+  .content .block .image {
+      margin: 0 0 20px 20px;
+  }
 }
 
 
 
 
 // @media (min-width: 750px) and (max-width: 869px) {
-    // @media only screen and (max-device-width: 869px) {
-    @media (max-width: 869px) {
-    .content {
-        height: 1200px;
-        max-width: 750px;
-        margin: auto;
-    }
-    .content .block {
-        float: left;
-        margin: auto;
-        width: 335px;
-        padding-left: 30px;
-    }
-    .content .the-app {
-        height: 250px;
-        padding-top: 125px;
-    }
-    
-    .content .feature {
-        height: 375px;
-        padding-top: 25px;
-    }
-    .content .block .image {
-        margin: 0 0 20px 60px;
-    }
+  // @media only screen and (max-device-width: 869px) {
+  @media (max-width: 869px) {
+  .content {
+      height: 1200px;
+      max-width: 750px;
+      margin: auto;
+  }
+  .content .block {
+      float: left;
+      margin: auto;
+      width: 335px;
+      padding-left: 30px;
+  }
+  .content .the-app {
+      height: 250px;
+      padding-top: 125px;
+  }
+  
+  .content .feature {
+      height: 375px;
+      padding-top: 25px;
+  }
+  .content .block .image {
+      margin: 0 0 20px 60px;
+  }
 }
 
 
 
 
 // @media (min-width: 615px) and (max-width: 749px) {
-    // @media only screen and (max-device-width: 749px) {
-    @media (max-width: 749px) {
-    .content {
-        height: 1200px;
-        max-width: 615px;
-        margin: auto;
-    }
-    .content .block {
-        float: left;
-        margin: auto;
-        width: 280px;
-        padding-left: 20px;
-    }
-    .content .the-app {
-        height: 250px;
-        padding-top: 125px;
-    }
-    
-    .content .feature {
-        height: 375px;
-        padding-top: 25px;
-    }
-    .content .block .image {
-        margin: 0 0 20px 20px;
-    }
+  // @media only screen and (max-device-width: 749px) {
+  @media (max-width: 749px) {
+  .content {
+      height: 1200px;
+      max-width: 615px;
+      margin: auto;
+  }
+  .content .block {
+      float: left;
+      margin: auto;
+      width: 280px;
+      padding-left: 20px;
+  }
+  .content .the-app {
+      height: 250px;
+      padding-top: 125px;
+  }
+  
+  .content .feature {
+      height: 375px;
+      padding-top: 25px;
+  }
+  .content .block .image {
+      margin: 0 0 20px 20px;
+  }
 }
 
 
@@ -490,137 +490,137 @@ input:focus {
 
 // @media (min-width: 400px) and (max-width: 614px) {
 // @media only screen and (max-device-width: 614px) {
-    @media (max-width: 614px) {
-    .content {
-        height: 2375px;
-        max-width: 400px;
-        margin: auto;
-    }
-    .content .block {
-        // float: left;
-        margin: auto;
-        width: 360px;
-        padding-left: 20px;
-    }
-    .content .the-app {
-        height: 250px;
-        padding-top: 125px;
-    }
-    
-    .content .feature {
-        height: 375px;
-        padding-top: 25px;
-    }
-    .content .block .image {
-        margin: 0 0 20px 80px;
-    }
+  @media (max-width: 614px) {
+  .content {
+      height: 2375px;
+      max-width: 400px;
+      margin: auto;
+  }
+  .content .block {
+      // float: left;
+      margin: auto;
+      width: 360px;
+      padding-left: 20px;
+  }
+  .content .the-app {
+      height: 250px;
+      padding-top: 125px;
+  }
+  
+  .content .feature {
+      height: 375px;
+      padding-top: 25px;
+  }
+  .content .block .image {
+      margin: 0 0 20px 80px;
+  }
 }
 
 
 
 
 // @media only screen and (max-device-width: 480px) {
-    @media (max-width: 480px) {
-    .content {
-        height: 2375px;
-        max-width: 480px;
-        margin: auto;
-    }
-    .content .block {
-        float: left;
-        margin: auto;
-        width: 330px;
-        // padding-left: 20px;
-    }
-    .content .the-app {
-        // height: 250px;
-        padding-top: 125px;
-    }
-    
-    .content .feature {
-        // height: 375px;
-        padding-top: 25px;
-    }
-    .content .block .image {
-        margin: 0 0 20px 80px;
-    }
+  @media (max-width: 480px) {
+  .content {
+      height: 2375px;
+      max-width: 480px;
+      margin: auto;
+  }
+  .content .block {
+      float: left;
+      margin: auto;
+      width: 330px;
+      // padding-left: 20px;
+  }
+  .content .the-app {
+      // height: 250px;
+      padding-top: 125px;
+  }
+  
+  .content .feature {
+      // height: 375px;
+      padding-top: 25px;
+  }
+  .content .block .image {
+      margin: 0 0 20px 80px;
+  }
 }
 
 // @media only screen and (max-device-width: 375px) {
-    @media (max-width: 375px) {
-    .content {
-        height: 2375px;
-        max-width: 375px;
-        margin: auto;
-    }
-    .content .block {
-        float: left;
-        margin: auto;
-        width: 330px;
-        // padding-left: 20px;
-    }
-    .content .the-app {
-        // height: 250px;
-        padding-top: 125px;
-    }
-    
-    .content .feature {
-        // height: 375px;
-        padding-top: 25px;
-    }
-    .content .block .image {
-        margin: 0 0 20px 80px;
-    }
+  @media (max-width: 375px) {
+  .content {
+      height: 2375px;
+      max-width: 375px;
+      margin: auto;
+  }
+  .content .block {
+      float: left;
+      margin: auto;
+      width: 330px;
+      // padding-left: 20px;
+  }
+  .content .the-app {
+      // height: 250px;
+      padding-top: 125px;
+  }
+  
+  .content .feature {
+      // height: 375px;
+      padding-top: 25px;
+  }
+  .content .block .image {
+      margin: 0 0 20px 80px;
+  }
 }
 
 
 
 
 .content .the-app h {
-    color: #42014e;
-    font-family: "Adelle";
-    font-size: 52px;
-    font-weight: 300;
-    letter-spacing: 0.52px;
-    line-height: 51px;
-    text-align: left;
+  color: #42014e;
+  font-family: "Adelle";
+  font-size: 52px;
+  font-weight: 300;
+  letter-spacing: 0.52px;
+  line-height: 51px;
+  text-align: left;
 }
 
 .content .the-app p {
-    color: #7d7d7d;
-    font-family: "Adelle Light Italic";
-    font-size: 17px;
-    font-weight: 400;
-    text-align: left;
+  color: #7d7d7d;
+  font-family: "Adelle Light Italic";
+  font-size: 17px;
+  font-weight: 400;
+  text-align: left;
 }
 
 .content .image__icon {
-    z-index: 10;
+  z-index: 10;
 }
 
 .content .image__btn {
-    margin: 0 0 4px -41px;
-    z-index: 100;
+  margin: 0 0 4px -41px;
+  z-index: 100;
 }
 
 .content h {
-    color: #df0e6b;
-    font-family: "Adelle";
-    font-size: 18px;
-    font-weight: 300;
-    letter-spacing: 0.29px;
-    line-height: 12.49px;
-    text-align: left;
+  color: #df0e6b;
+  font-family: "Adelle";
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.29px;
+  line-height: 12.49px;
+  text-align: left;
 }
 
 .content p {
-    color: #7c7b74;
-    font-family: "Proxima Nova RG";
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 0.22px;
-    line-height: 20px;
-    text-align: left;
+  color: #7c7b74;
+  font-family: "Proxima Nova RG";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.22px;
+  line-height: 20px;
+  text-align: left;
 }
 
 
@@ -633,80 +633,80 @@ input:focus {
 
 
 .footer {
-    background-image: url(assets/footer-bg.png);
+  background-image: url(assets/footer-bg.png);
 }
 
 .footer .wrapper {
-    margin: auto;
+  margin: auto;
 }
 
 .address, .social, .company {
-    float: left;
-    margin: auto;
+  float: left;
+  margin: auto;
 }
 
 .legals {
-    margin: auto;
-    padding-left: 40px;
+  margin: auto;
+  padding-left: 40px;
 }
 
 .footer .wrapper .address {
-    width: 270px;
-    padding-left: 40px;
+  width: 270px;
+  padding-left: 40px;
 }
 .footer .wrapper .social {
-    width: 120px;
-    padding-left: 45px;
+  width: 120px;
+  padding-left: 45px;
 }
 .footer .wrapper .company {
-    width: 120px;
-    padding-left: 45px;
+  width: 120px;
+  padding-left: 45px;
 }
 
 .address__title, .social__title, .company__title {
-    color: #df0e6b;
-    font-family: "Proxima Nova";
-    font-size: 19px;
-    letter-spacing: 0.19px;
-    line-height: 30px;
+  color: #df0e6b;
+  font-family: "Proxima Nova";
+  font-size: 19px;
+  letter-spacing: 0.19px;
+  line-height: 30px;
 }
 
 .address__body, .social__body, .company__body {
-    color: #416589;
-    font-family: "Proxima Nova";
-    font-size: 18px;
-    letter-spacing: 0.18px;
-    line-height: 20px;
+  color: #416589;
+  font-family: "Proxima Nova";
+  font-size: 18px;
+  letter-spacing: 0.18px;
+  line-height: 20px;
 }
 
 .legals {
-    color: #416589;
-    font-family: "Proxima Nova";
-    font-size: 14px;
-    letter-spacing: 0.18px;
-    line-height: 20px;
+  color: #416589;
+  font-family: "Proxima Nova";
+  font-size: 14px;
+  letter-spacing: 0.18px;
+  line-height: 20px;
 }
 
 .address__email {
-    color: #416589;
-    font-family: "Proxima Nova Semibold";
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 0.65px;
-    line-height: 40px;
-    text-transform: uppercase;
+  color: #416589;
+  font-family: "Proxima Nova Semibold";
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.65px;
+  line-height: 40px;
+  text-transform: uppercase;
 }
 
 .social__top, .social__middle, .social__bottom {
-    height: 30px;
+  height: 30px;
 }
 
 .social__icon {
-    padding: 2px 10px 0 0px;
+  padding: 2px 10px 0 0px;
 }
 
 .company__top, .company__middle, .company__bottom {
-    height: 30px;
+  height: 30px;
 }
 
 
@@ -718,39 +718,39 @@ input:focus {
 
 // Address MQs
 @media (min-width: 1024px) {
-    .footer {
-        height: 300px;
-    }
-    .footer .wrapper {
-        max-width: 1024px;
-    }
-    .address, .social, .company, .legals {
-        padding-top: 50px;
-    }
+  .footer {
+      height: 300px;
+  }
+  .footer .wrapper {
+      max-width: 1024px;
+  }
+  .address, .social, .company, .legals {
+      padding-top: 50px;
+  }
 }
 
 @media (max-width: 1023px) {
-    .footer {
-        height: 430px;
-    }
-    .footer .wrapper {
-        max-width: 700px;
-    }
-    .address, .social, .company, .legals {
-        padding-top: 50px;
-    }
+  .footer {
+      height: 430px;
+  }
+  .footer .wrapper {
+      max-width: 700px;
+  }
+  .address, .social, .company, .legals {
+      padding-top: 50px;
+  }
 }
 
 @media (max-width: 660px) {
-    .footer {
-        height: 650px;
-    }
-    .footer .wrapper {
-        max-width: 400px;
-    }
-    .address, .social, .company, .legals {
-        padding-top: 50px;
-    }
+  .footer {
+      height: 650px;
+  }
+  .footer .wrapper {
+      max-width: 400px;
+  }
+  .address, .social, .company, .legals {
+      padding-top: 50px;
+  }
 }
 
 
@@ -763,23 +763,23 @@ input:focus {
 
 // Background-overlay for lightbox modal
 .background-overlay {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 100;
-    background-color: rgba(10,10,10,.45);
-    overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(10,10,10,.45);
+  overflow-y: scroll;
 }
 
 .lightbox {
-    background-color: white;
-    box-shadow: 0px 0px 15px 0px #212121;
-    margin-left: 50%;
-    margin-top: 350px;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    z-index: 101;
-    width: 50%;
+  background-color: white;
+  box-shadow: 0px 0px 15px 0px #212121;
+  margin-left: 50%;
+  margin-top: 350px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 101;
+  width: 50%;
 }
