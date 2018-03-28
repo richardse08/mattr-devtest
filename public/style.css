@@ -7,6 +7,9 @@ html, body {
 a, a:visited, a:focus {
   text-decoration: none; }
 
+.fa-times {
+  font-size: 30px; }
+
 /* helpers *************************************/
 .float-left {
   float: left; }
@@ -36,6 +39,12 @@ a, a:visited, a:focus {
 @font-face {
   font-family: 'Proxima Nova Semibold';
   src: url(/assets/fonts/ProximaNova-Semibold.otf); }
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url(/assets/fonts/ProximaNova-Bold.otf); }
+@font-face {
+  font-family: 'Proxima Nova Extrabold';
+  src: url(/assets/fonts/ProximaNova-Extrabold.otf); }
 @font-face {
   font-family: 'Proxima Nova Semibold Italic';
   src: url(/assets/fonts/ProximaNova-SboldItalic.otf); }
@@ -531,15 +540,14 @@ input:focus {
   position: absolute;
   z-index: 101; }
 
-.lightbox__background {
-  background-image: url("/assets/lightbox.png"); }
-
-.lightbox__footer {
+.lightbox .lightbox__footer {
   margin-top: -50px;
-  position: fixed;
-  z-index: 102; }
+  position: absolute;
+  z-index: 102;
+  width: 99%;
+  padding: 10px 0 0 5px; }
 
-.lightbox__footer .screenshot__title--title {
+.lightbox .lightbox__footer .screenshot__title--title {
   color: #df0e6b;
   font-family: "Adelle";
   font-size: 18px;
@@ -547,10 +555,42 @@ input:focus {
   letter-spacing: 0.29px;
   line-height: 12.49px; }
 
-.lightbox__footer .screenshot__title--body {
+.lightbox .lightbox__footer .screenshot__title--body {
+  color: #7c7b74;
+  font-family: "Proxima Nova RG";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.22px;
+  line-height: 20px; }
+
+.nav {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 62px;
+  background-color: #2d2d2d; }
+
+.nav-logo {
+  margin: 5px 0 0 53px;
   float: left; }
 
-.lightbox__footer .fa-times {
-  font-size: 20px; }
+.nav-brand {
+  margin: 23px 0 0 46px;
+  float: left; }
+
+.nav__invite {
+  background-image: url(/assets/invite-background.png);
+  text-align: center;
+  width: 182px;
+  height: 28px;
+  margin: 18px 25px 0 0;
+  padding: 8px 0 0 0;
+  box-sizing: border-box;
+  float: right; }
+
+.nav__invite div {
+  color: #ffffff;
+  font-family: 'Proxima Nova Extrabold';
+  font-size: 14px; }
 
 /*# sourceMappingURL=style.css.map */
