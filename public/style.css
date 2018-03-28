@@ -547,6 +547,9 @@ input:focus {
   letter-spacing: 0.29px;
   line-height: 12.49px; }
 
+.lightbox__footer .screenshot__title--body {
+  float: left; }
+
 .lightbox__footer .fa-times {
   font-size: 20px; }
 

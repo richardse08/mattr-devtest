@@ -5,6 +5,15 @@ $(document).ready(function() {
 
         // Add overlay and pop up modal when lightbox is clicked
         $('.lightbox-listener').on('click', function() {
+
+            // Get the html of the blocks user clicks on
+            var headerInject = this.children[1].innerHTML;
+            var paragraphInject = this.children[2].innerHTML;
+
+            // Dynamically inject that html into the modal on the fly
+            $('.screenshot__title--title').html(headerInject);
+            $('.screenshot__title--body').html(paragraphInject);
+
             $('.lightbox').removeClass('display-none');
             $('.background-overlay').removeClass('display-none');
     
@@ -13,6 +22,10 @@ $(document).ready(function() {
                 scrollTop: 0
             }, 'slow');
         });
+
+
+
+
     
         // Remove overlay and remove pop up modal when exit button is clicked
         $('.lightbox-exit').on('click', function() {
