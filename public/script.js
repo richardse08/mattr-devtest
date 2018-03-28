@@ -31,25 +31,25 @@ $(document).ready(function() {
 
 
 
-    // Add overlay and pop up modal when lightbox is clicked
-    $('.lightbox-listener').on('click', function() {
+    // // Add overlay and pop up modal when lightbox is clicked
+    // $('.lightbox-listener').on('click', function() {
 
-        // Get the html of the blocks user clicks on
-        var headerInject = this.children[1].innerHTML;
-        var paragraphInject = this.children[2].innerHTML;
+    //     // Get the html of the blocks user clicks on
+    //     var headerInject = this.children[1].innerHTML;
+    //     var paragraphInject = this.children[2].innerHTML;
 
-        // Dynamically inject that html into the modal on the fly
-        $('.screenshot__title--title').html(headerInject);
-        $('.screenshot__title--body').html(paragraphInject);
+    //     // Dynamically inject that html into the modal on the fly
+    //     $('.screenshot__title--title').html(headerInject);
+    //     $('.screenshot__title--body').html(paragraphInject);
 
-        $('.lightbox').removeClass('display-none');
-        $('.background-overlay').removeClass('display-none');
+    //     $('.lightbox').removeClass('display-none');
+    //     $('.background-overlay').removeClass('display-none');
 
-        $('html, body').animate({
-            // Scroll to degree, taking into account 64 pixels of the sticky nav
-            scrollTop: 0
-        }, 'slow');
-    });
+    //     $('html, body').animate({
+    //         // Scroll to degree, taking into account 64 pixels of the sticky nav
+    //         scrollTop: 0
+    //     }, 'slow');
+    // });
 
 
 
