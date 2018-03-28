@@ -6,10 +6,11 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.5">
-
+    <title>Mattr</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="script.js" type="text/javascript"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 </head>
 
 
@@ -25,7 +26,18 @@
 
 
     
-    <img class="lightbox display-none" src="assets/lightbox.png">
+    <div class="lightbox display-none">
+        <img src="assets/lightbox.png">
+        <div class="lightbox__footer">
+            <div class="float-left">
+                <div class="screenshot__title--title">Screenshot Title</div>
+                <div class="screenshot__title--body">Lorem ipsum dolor sit amet</div>
+            </div>
+            <div class="lightbox-exit">
+                <i class="fas fa-times float-right"></i>
+            </div>
+        </div>
+    </div>
 
 
 
