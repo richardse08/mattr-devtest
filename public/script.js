@@ -6,11 +6,13 @@ $(document).ready(function() {
 
     // Show nav bar unless user is at the top
     function sticky_nav_scroll() {
-        if (window.pageYOffset > 0 && w >= 500) {
+        if (window.pageYOffset > 100 && w >= 500) {
             $('.nav').removeClass('display-none');
+            $('body').addClass('body-margin-modifier');
         }
         else {
             $('.nav').addClass('display-none');
+            $('body').removeClass('body-margin-modifier');
         }
     }
 
