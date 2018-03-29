@@ -1,5 +1,14 @@
 $(document).ready(function() {
 
+    var timeStampInMs = window.performance && window.performance.now && window.performance.timing && window.performance.timing.navigationStart ? window.performance.now() + window.performance.timing.navigationStart : Date.now();
+
+    var rawDate = Date.now();
+
+    var submitTime = new Date(rawDate).toUTCString();
+    // var submitTime = 1234;
+
+
+
     // Get screen width
     var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 
@@ -66,11 +75,41 @@ $(document).ready(function() {
 
 
 
+
+
+
+
+
+
+
+
+    // Create function to save email and send it to database
+    function emailSave(email, timestamp) {
+
+        // Create email for development only
+        var testEmail = 'eric.richards.finance@gmail.com';
+        // var timestamp = submissionTime;
+        // console.log(submitTime);
+
+        // Send it
+        $.get( "/email-save", { emailAddress: email, emailTimestamp: timestamp}, function(data) {
+        
+            console.log(email);
+            console.log('checkpoint');                
+        });
+
+    };
+
+
+
+
+
+    // Make sure the email is allowable, if so send it to the db
     function validateEmail (email) {
         if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
 
             // Send the email address to the emailSave function to send to the database
-            emailSave(email);
+            emailSave(email, submitTime);
 
             // Simple alert, need to change
             alert('Your request has been saved. Thank you!');
@@ -93,23 +132,6 @@ $(document).ready(function() {
 
 
 
-
-
-
-    // Create function to save email and send it to database
-    function emailSave(email) {
-
-        // Create email for development only
-        var testEmail = 'eric.richards.finance@gmail.com';
-
-        // Send it
-        $.get( "/email-save", { emailAddress: email}, function(data) {
-        
-            console.log(data);
-            console.log('checkpoint');                
-        });
-
-    };
 
 
 
