@@ -371,8 +371,8 @@ input:focus {
     margin: 0 0 0 70px;
   }
 
-  .invite {
-    width: 250px;
+  .email__field {
+    width: 100px !important;
   }
 
   .intro {
