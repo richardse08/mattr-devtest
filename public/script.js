@@ -123,16 +123,21 @@ $(document).ready(function() {
             // Send the email address to the emailSave function to send to the database
             emailSave(email, submitTime);
 
+            // Add or update status message
+            $('#js-message-wrong').addClass('display-none');
+            $('#js-message').removeClass('display-none');
+
             // Remove display-none on checkbox
             $('.checkbox').removeClass('display-none');
+
+            // Switch over to email--sent
+            $('.invite__request').removeClass('email--unsent');
+            $('.invite__request').addClass('email--sent');
 
             // Change submit button text
             requested = 'REQUESTED';
             $('#buttontext').html(requested);
 
-            // Add or update status message
-            $('#js-message-wrong').addClass('display-none');
-            $('#js-message').removeClass('display-none');
         }
         else {
 
@@ -142,6 +147,10 @@ $(document).ready(function() {
 
             // Hide checkbox
             $('.checkbox').addClass('display-none');
+
+            // Switch over to email--unsent
+            $('.invite__request').removeClass('email--sent');
+            $('.invite__request').addClass('email--unsent');
 
             // Change submit button text
             requested = 'REQUEST INVITE';

@@ -206,11 +206,17 @@ input:focus {
 .invite__request {
   width: 125px;
   height: 40px;
-  background-image: url(assets/layer.png);
-  // background-image: url(assets/layer-requested.png);
   margin: 5px 5px 0 0;
   padding: 11px 0 0 0;
   box-sizing: border-box;
+}
+
+.email--unsent {
+  background-image: url(assets/layer.png);
+}
+
+.email--sent {
+  background-image: url(assets/layer-requested.png);
 }
 
 .invite__request--text {
