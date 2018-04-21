@@ -337,6 +337,39 @@ input:focus {
   .mattr-text-logo {
     display: none;
   }
+
+  .lightbox__imagesize {
+    width: 366px;
+    height: 268px;
+  }
+
+  .screenshot__title--title {
+    margin-top: 20px !important;
+    font-size: 12px !important;
+    font-weight: 200 !important;
+    letter-spacing: 0px !important;
+    line-height: 10px !important;
+  }
+
+  .screenshot__title--body {
+    display: none;
+  }
+
+  .fa-times {
+    margin: 20px 0 0 5px;
+    font-size: 10px;
+  }
+
+  .message {
+    width: 200px;
+    height: 50px;
+    font-size: 13px;
+    color: #ffffff;
+    font-family: "Proxima Nova";
+    letter-spacing: 1px;
+    line-height: 18px;
+    margin: 0 0 0 70px;
+  }
 }
 /* main section ***********************************/
 @media (min-width: 1024px) {
