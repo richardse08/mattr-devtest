@@ -372,7 +372,11 @@ input:focus {
   }
 
   .invite {
-    width: 312px;
+    width: 315px;
+  }
+
+  .intro {
+    margin-bottom: 50px;
   }
 }
 /* main section ***********************************/
