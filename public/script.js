@@ -53,25 +53,25 @@ $(document).ready(function() {
 
 
 
-    // // Add overlay and pop up modal when lightbox is clicked
-    // $('.lightbox-listener').on('click', function() {
+    // Add overlay and pop up modal when lightbox is clicked
+    $('.lightbox-listener').on('click', function() {
 
-    //     // Get the html of the blocks user clicks on
-    //     var headerInject = this.children[1].innerHTML;
-    //     var paragraphInject = this.children[2].innerHTML;
+        // Get the html of the blocks user clicks on
+        var headerInject = this.children[1].innerHTML;
+        var paragraphInject = this.children[2].innerHTML;
 
-    //     // Dynamically inject that html into the modal on the fly
-    //     $('.screenshot__title--title').html(headerInject);
-    //     $('.screenshot__title--body').html(paragraphInject);
+        // Dynamically inject that html into the modal on the fly
+        $('.screenshot__title--title').html(headerInject);
+        $('.screenshot__title--body').html(paragraphInject);
 
-    //     $('.lightbox').removeClass('display-none');
-    //     $('.background-overlay').removeClass('display-none');
+        $('.lightbox').removeClass('display-none');
+        $('.background-overlay').removeClass('display-none');
 
-    //     $('html, body').animate({
-    //         // Scroll to degree, taking into account 64 pixels of the sticky nav
-    //         scrollTop: 0
-    //     }, 'slow');
-    // });
+        $('html, body').animate({
+            // Scroll to degree, taking into account 64 pixels of the sticky nav
+            scrollTop: 0
+        }, 'slow');
+    });
 
 
 
@@ -81,6 +81,16 @@ $(document).ready(function() {
     $('.lightbox-exit').on('click', function() {
         $('.lightbox').addClass('display-none');
         $('.background-overlay').addClass('display-none');
+        
+    });
+
+    // Click excape key to close out lighbox
+    $('body').keyup(function (escapeEvent) {
+        var key = escapeEvent.which;
+        if(key == 27) {
+            $('.lightbox').addClass('display-none');
+            $('.background-overlay').addClass('display-none');
+        }
     });
 
 
@@ -118,14 +128,16 @@ $(document).ready(function() {
     // Make sure the email is allowable, if so send it to the db
     function validateEmail (email) {
         var requested;
+        var emailEntryGood = 'Thanks for signing up!  You’ll recieve an email with your invitation.';
+        var emailEntryBad = 'There was a problem with your Request: Valid email address not provided.';
+
+        // If user inputs a good email
         if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
 
             // Send the email address to the emailSave function to send to the database
             emailSave(email, submitTime);
 
-            // Add or update status message
-            $('#js-message-wrong').addClass('display-none');
-            $('#js-message').removeClass('display-none');
+            $('#js-message-endpoint').html(emailEntryGood);
 
             // Remove display-none on checkbox
             $('.checkbox').removeClass('display-none');
@@ -139,11 +151,11 @@ $(document).ready(function() {
             $('#buttontext').html(requested);
 
         }
+        
+        // If user enters a forbidden email
         else {
 
-            // Add or update status message
-            $('#js-message').addClass('display-none');
-            $('#js-message-wrong').removeClass('display-none');
+            $('#js-message-endpoint').html(emailEntryBad);
 
             // Hide checkbox
             $('.checkbox').addClass('display-none');

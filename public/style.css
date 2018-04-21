@@ -30,6 +30,10 @@ a, a:visited, a:focus {
   display: none;
 }
 
+.visibility-hidden {
+  visibility: hidden;
+}
+
 .body-margin-modifier {
   margin-top: 100px;
 }
@@ -74,7 +78,7 @@ a, a:visited, a:focus {
 .hero {
   background-image: url(/assets/hero.png);
   background-repeat: no-repeat;
-  padding-bottom: 45px;
+  padding-bottom: 22px;
 }
 
 .hero .header {
@@ -715,7 +719,7 @@ input:focus {
   position: absolute;
   z-index: 102;
   width: 99%;
-  padding: 10px 0 0 5px;
+  padding: 0 0 0 5px;
 }
 
 .lightbox .lightbox__footer .screenshot__title--title {
@@ -730,9 +734,8 @@ input:focus {
 .lightbox .lightbox__footer .screenshot__title--body {
   color: #7c7b74;
   font-family: "Proxima Nova RG";
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
-  letter-spacing: 0.22px;
   line-height: 20px;
 }
 
