@@ -89,10 +89,15 @@
                 <div class="invite">
                     <input class="email__field" type="email" placeholder="your@email.com">
                     <div class="invite__request js-email-link float-right">
-                        <div class="invite__request--text"><img src="assets/checkmark.png" class="checkbox display-none">REQUEST INVITE</div>
-                        <h2 id="result"></h2>
+                        <div class="invite__request--text">
+                            <img src="assets/checkmark.png" class="checkbox float-left display-none">
+                            <div id="buttontext" class="float-right">REQUEST INVITE</div>
+                        </div>
                     </div>
                 </div>
+
+                <div class="message display-none" id="js-message">Thanks for signing up!  You’ll recieve an email with your invitation.</div>
+                <div class="message display-none" id="js-message-wrong">There was a problem with your Request: Valid email address not provided.</div>
 
             </div>
 

@@ -207,6 +207,7 @@ input:focus {
   width: 125px;
   height: 40px;
   background-image: url(assets/layer.png);
+  // background-image: url(assets/layer-requested.png);
   margin: 5px 5px 0 0;
   padding: 11px 0 0 0;
   box-sizing: border-box;
@@ -218,6 +219,25 @@ input:focus {
   font-size: 12px;
   border-radius: 5px;
   text-align: center;
+}
+
+.invite__request--text .checkbox {
+  margin: 0 0 0 10px;
+}
+
+#buttontext {
+  margin: 5px 10px 0 0;
+}
+
+.message {
+  width: 338px;
+  height: 50px;
+  font-size: 13px;
+  color: #ffffff;
+  font-family: 'Proxima Nova';
+  letter-spacing: 1px;
+  line-height: 18px;
+  margin: 0 0 0 70px;
 }
 
 
@@ -868,6 +888,7 @@ input:focus {
   padding: 8px 0 0 0;
   box-sizing: border-box;
   float: right;
+  cursor: pointer;
 }
 
 .nav__invite div {

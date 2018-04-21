@@ -31,6 +31,17 @@ $(document).ready(function() {
     };
 
 
+    // Scroll to the top 
+    function scroller() {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 'slow');
+    };
+
+    $('.nav__invite').on('click', function() {
+        scroller();
+    });
+
 
 
 
@@ -111,21 +122,22 @@ $(document).ready(function() {
             // Send the email address to the emailSave function to send to the database
             emailSave(email, submitTime);
 
-            // Simple alert, need to change
-            alert('Your request has been saved. Thank you!');
-
             // Remove display-none on checkbox
             $('.checkbox').removeClass('display-none');
 
             // Change submit button text
             var requested = 'REQUESTED';
-            // $('invite__request--text').html(requested);
-            // invite__request--text.innerHTML(requested);
+            $('#buttontext').html(requested);
+
+            // Add or update status message
+            $('#js-message-wrong').addClass('display-none');
+            $('#js-message').removeClass('display-none');
         }
         else {
 
-            // Simple alert, need to change
-            alert('Please enter a valid email address')
+            // Add or update status message
+            $('#js-message').addClass('display-none');
+            $('#js-message-wrong').removeClass('display-none');
         }
     };
 
