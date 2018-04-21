@@ -117,6 +117,7 @@ $(document).ready(function() {
 
     // Make sure the email is allowable, if so send it to the db
     function validateEmail (email) {
+        var requested;
         if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
 
             // Send the email address to the emailSave function to send to the database
@@ -126,7 +127,7 @@ $(document).ready(function() {
             $('.checkbox').removeClass('display-none');
 
             // Change submit button text
-            var requested = 'REQUESTED';
+            requested = 'REQUESTED';
             $('#buttontext').html(requested);
 
             // Add or update status message
@@ -138,6 +139,14 @@ $(document).ready(function() {
             // Add or update status message
             $('#js-message').addClass('display-none');
             $('#js-message-wrong').removeClass('display-none');
+
+            // Hide checkbox
+            $('.checkbox').addClass('display-none');
+
+            // Change submit button text
+            requested = 'REQUEST INVITE';
+            $('#buttontext').html(requested);
+
         }
     };
 
