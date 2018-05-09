@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var emailDump;
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 3001;
 
 // Configure Mongo database
 var MongoClient = require('mongodb').MongoClient; // Require mongodb

@@ -339,8 +339,8 @@ input:focus {
   }
 
   .lightbox__imagesize {
-    width: 366px;
-    height: 268px;
+    width: 30vw;
+    height: 30vh;
   }
 
   .screenshot__title--title {

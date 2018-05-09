@@ -376,8 +376,10 @@ input:focus {
       display: none;
   }
   .lightbox__imagesize {
-    width: 366px;
-    height: 268px;
+    // width: 366px;
+    // height: 268px;
+    width: 30vw;
+    height: 30vh;
   }
   .screenshot__title--title {
     margin-top: 20px !important;
